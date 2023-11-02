@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+}
+div{
+    margin: 0;
+}
+.barra0{
+    display: flex;
+    background-color: rgb(250, 227, 196);
+
+
+}
+
+.barra1{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(250, 227, 196, 0.8);
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    flex-direction: row; /* Establece la dirección de flujo a fila (horizontal) */
+    justify-content: flex-end; /* Justifica los elementos al final del contenedor */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    margin: 0;
+    top: 0;
+    z-index: 1; /* Asegura que la barra esté por encima del contenido */
+    overflow: hidden; /* Evita la barra de desplazamiento */
+}
+
+.seccion {
+    margin: 5px 35px; /* Agrega márgenes a los elementos para espaciarlos */
+}
+
+.seccion:hover{
+    cursor: pointer;
+    color:rgb(90, 65, 33)
+}
+
+
+.titleNav {
+    margin: 5px 35px; /* Agrega márgenes a los elementos para espaciarlos */
+    color: rgb(0, 0, 0);
+
+}
+
+.logoSoham{
+    display: flex;
+
+}
+
+.logoSoham img {
+    height: 30px;
+    width: 40px;
+    margin-left: 15px;
+}

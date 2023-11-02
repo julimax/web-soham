@@ -1,0 +1,39 @@
+.home {
+    display: flex;
+    background-image: url('images/homeBackground.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el elemento */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-color: (250, 227, 196);
+    width: 100%;
+    height: 650px;
+    animation: moveBackground 5s linear; /* Duración, temporización y repetición de la animación */
+    animation: moveBackground 5s ease-in-out; /* Usar "ease-in-out" para suavizar el movimiento */
+}
+
+@keyframes moveBackground {
+    0% {
+        transform: translateX(-100px); /* Comienza desplazada a la izquierda */
+    }
+    25% {
+        transform: translateX(100px); /* Se desplaza a la derecha */
+    }
+    75% {
+        transform: translateX(-50px); /* Vuelve a desplazarse a la izquierda */
+    }
+    100% {
+        transform: translateX(0); /* Se acomoda en el centro */
+    }
+}
+
+body {
+    margin: 0;
+}
+div{
+    margin: 0;
+}
+
+.titleSoham{
+    position: relative;
+    color: aliceblue;
+    margin-top: 150px;
+}
