@@ -8,6 +8,7 @@
     height: 650px;
     animation: moveBackground 5s linear; /* Duración, temporización y repetición de la animación */
     animation: moveBackground 5s ease-in-out; /* Usar "ease-in-out" para suavizar el movimiento */
+
 }
 
 @keyframes moveBackground {
@@ -27,6 +28,7 @@
 
 body {
     margin: 0;
+    overflow: hidden; /* Evita la barra de desplazamiento */
 }
 div{
     margin: 0;
