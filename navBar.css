@@ -6,15 +6,16 @@ div{
 }
 .barra0{
     display: flex;
-    background-color: rgb(250, 227, 196);
+    background-color: rgb(250, 227, 196, 0.4);
+}
 
-
+.barra0:hover{
+    background-color: rgb(250, 227, 196, 0.8);
 }
 
 .barra1{
     height: 30px;
     width: 100%;
-    background-color: rgb(250, 227, 196, 0.8);
     display: flex; /* Establece el contenedor como un contenedor flexible */
     flex-direction: row; /* Establece la dirección de flujo a fila (horizontal) */
     justify-content: flex-end; /* Justifica los elementos al final del contenedor */
@@ -31,7 +32,7 @@ div{
 
 .seccion:hover{
     cursor: pointer;
-    color:rgb(90, 65, 33)
+    color:rgb(62, 184, 184)
 }
 
 
