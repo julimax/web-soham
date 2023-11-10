@@ -1,6 +1,6 @@
 .home {
     display: flex;
-    background-image: url('images/homeBackground.jpg');
+    background-image: url('../images/homeBackground.jpg');
     background-size: cover; /* Ajusta la imagen para cubrir todo el elemento */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-color: (250, 227, 196);
@@ -39,3 +39,33 @@ div{
     color: aliceblue;
     margin-top: 150px;
 }
+
+.escuelaDeYoga {
+    color: rgb(3, 3, 3);
+    background-color: rgb(250, 227, 196);
+    width: 250px;
+    height: 50px;
+    border-radius: 10.2%;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: aparecer 2s ease-in-out forwards;
+    margin-top: 200px;
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  En este caso, he incluido las propiedades de opacity y transform directamente en la regla .escuelaDeYoga, evitando la necesidad de una clase adicional específica para la animación. Este enfoque simplifica la estructura CSS, pero ten en cuenta que también puedes mantener la estructura anterior si prefieres una mayor modularidad.
+  
+  
+  
+  
+  
+  
