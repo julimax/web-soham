@@ -1,15 +1,35 @@
 .home {
-    display: flex;
-    background-image: url('../images/homeBackground.jpg');
-    background-size: cover; /* Ajusta la imagen para cubrir todo el elemento */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-color: (250, 227, 196);
-    width: 100%;
-    height: 650px;
-    animation: moveBackground 8s linear; /* Duración, temporización y repetición de la animación */
-    animation: moveBackground 8s ease-in-out; /* Usar "ease-in-out" para suavizar el movimiento */
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 650px;
+  overflow: hidden; /* Asegura que el contenido no se desborde fuera del contenedor */
 
+  /* Resto de tus estilos para el fondo */
+  background-color: #FAD4AF;
 }
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/homeBackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: moveBackground 8s ease-in-out infinite; /* La animación se aplica solo al pseudo-elemento */
+  z-index: 0;
+}
+
+.mainHome{
+  display: block;
+  z-index: 1;
+  margin-left: 150px;
+}
+
+
 
 @keyframes moveBackground {
     0% {
@@ -30,6 +50,7 @@ body {
     margin: 0;
     overflow: hidden; /* Evita la barra de desplazamiento */
 }
+
 div{
     margin: 0;
 }
@@ -43,25 +64,32 @@ div{
 
 .titleSoham {
     position: relative;
-    color: aliceblue;
+    color: #FAD4AF;
     margin-top: 150px;
     font-family: 'RocaOne', sans-serif;
     letter-spacing: 1px;
+    font-size: 106;
   }
   
 
 .escuelaDeYoga {
     color: rgb(3, 3, 3);
-    background-color: rgb(250, 227, 196);
+    background-color: #FAD4AF;
     width: 250px;
     height: 50px;
     border-radius: 10.2%;
+    z-index: 20;
+  }
+  
+
+  .descripcionHome{
+    width: 200px;
     opacity: 0;
     transform: translateY(100%);
     animation: aparecer 2s ease-in-out forwards;
-    margin-top: 200px;
+    margin-top: 10px;
   }
-  
+
   @keyframes aparecer {
     0% {
       opacity: 0;
