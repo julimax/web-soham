@@ -19,7 +19,7 @@
   background-image: url('../images/homeBackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  animation: moveBackground 8s ease-in-out infinite; /* La animación se aplica solo al pseudo-elemento */
+  animation: moveBackground 8s ease-in-out; /* La animación se aplica solo al pseudo-elemento */
   z-index: 0;
 }
 
