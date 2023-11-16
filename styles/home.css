@@ -62,33 +62,76 @@ div{
     font-style: normal;
   }
 
-.titleSoham {
+  .titleSoham {
     position: relative;
     color: #FAD4AF;
     margin-top: 150px;
     font-family: 'RocaOne', sans-serif;
     letter-spacing: 1px;
-    font-size: 106;
-  }
+    font-size: 106px; /* Asegúrate de incluir la unidad (px) para el tamaño de la fuente */
+
+    /* Establecer el punto de partida fuera de la pantalla */
+    transform: translateX(-100%);
+    opacity: 0;
+
+    /* Animación para la aparición */
+    animation: aparecerTitulo 1s forwards;
+}
+
+@keyframes aparecerTitulo {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0.2; /* Ajusta el nivel de transparencia inicial aquí (0 es completamente transparente, 1 es opaco) */
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
   
 
 .escuelaDeYoga {
     color: rgb(3, 3, 3);
     background-color: #EBBB8D;
-    width: 250px;
-    height: 50px;
+    width: 180px;
+    height: 20px;
     border-radius: 10.2%;
     z-index: 20;
+    border-radius: 15px; /* Puedes ajustar el valor según el redondeo deseado */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    padding: 15px; /* Ajusta el relleno interno según sea necesario */
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 20px;
+    margin-left: 160px;
+    margin-top: -90px; /* Ajusta la posición hacia arriba */
   }
   
 
-  .descripcionHome{
-    width: 200px;
+ 
+  .descripcionHome {
+    width: 350px;
+    height: 120px; /* Ajustar la altura para tres renglones */
     opacity: 0;
     transform: translateY(100%);
     animation: aparecer 2s ease-in-out forwards;
-    margin-top: 10px;
-  }
+    margin-top: 60px;
+    background-color: #00000071; /* Cambio de color de fondo */
+    border-radius: 15px;
+    font-size: 25px; /* Reducir el tamaño del texto */
+    line-height: 1.5; /* Ajusta la altura de línea según sea necesario */
+    padding: 25px;
+    box-shadow: 0px 0px 10px rgba(2, 2, 2, 0.1); /* Agrega una sombra suave */
+    color: #FAD4AF;
+   
+    display: flex; /* Establecer el contenedor como flex */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    overflow: hidden; /* Ocultar cualquier exceso de texto */
+}
+
+
 
   @keyframes aparecer {
     0% {
