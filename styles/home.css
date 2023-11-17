@@ -106,6 +106,7 @@ div{
     line-height: 20px;
     margin-left: 160px;
     margin-top: -90px; /* Ajusta la posición hacia arriba */
+   
   }
   
 
@@ -143,4 +144,3 @@ div{
       transform: translateY(0);
     }
   }
- 
