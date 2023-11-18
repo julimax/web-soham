@@ -98,22 +98,25 @@ div{
 }
 
 .escuelaDeYoga {
-    color: rgb(3, 3, 3);
-    background-color: #EBBB8D;
-    width: 180px;
-    height: 20px;
-    border-radius: 10.2%;
-    z-index: 20;
-    border-radius: 15px; /* Puedes ajustar el valor según el redondeo deseado */
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
-    padding: 15px; /* Ajusta el relleno interno según sea necesario */
-    text-align: center; /* Centra el texto horizontalmente */
-    line-height: 20px;
-    margin-left: 160px;
-    margin-top: -90px; /* Ajusta la posición hacia arriba */
-    font-family: 'Arapey', serif;   
-    font-size: 22px;
-  }
+  color: rgb(3, 3, 3);
+  background-color: #EBBB8D;
+  width: auto; /* Cambio a ancho automático para ajustar el texto */
+  max-width: 300px; /* Limita el ancho máximo */
+  height: 35px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  font-family: 'Arapey', serif;
+  font-size: 35px;
+  line-height: 35px; /* Alineación vertical del texto */
+  margin-top: -80px;
+  margin-left: 30px;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+
+
   
 
  

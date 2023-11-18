@@ -52,3 +52,23 @@ div{
     width: 40px;
     margin-left: 15px;
 }
+
+
+@font-face {
+    font-family: 'Arapey';
+    src: url('../fonts/Arapey-Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  .barra1{
+    font-family: 'Arapey', serif;
+    text-transform: capitalize;
+  }
+
+
+  .titleNav{
+    font-family: 'Arapey', serif;
+    text-transform: capitalize;
+  }
