@@ -124,7 +124,7 @@ div{
  
   .descripcionHome {
     width: 380px;
-    height: 120px; /* Ajustar la altura para tres renglones */
+    height: 150px; /* Ajustar la altura para tres renglones */
     opacity: 0;
     transform: translateY(100%);
     animation: aparecer 2s ease-in-out forwards;
