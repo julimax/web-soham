@@ -65,7 +65,7 @@ div{
   .titleSoham {
     position: relative;
     color: #FAD4AF;
-    margin-top: 150px;
+    margin-top: 120px;
     font-family: 'RocaOne', sans-serif;
     letter-spacing: 1px;
     font-size: 110px; /* Asegúrate de incluir la unidad (px) para el tamaño de la fuente */
@@ -100,19 +100,20 @@ div{
 .escuelaDeYoga {
   color: rgb(3, 3, 3);
   background-color: #EBBB8D;
-  width: auto; /* Cambio a ancho automático para ajustar el texto */
-  max-width: 300px; /* Limita el ancho máximo */
-  height: 35px;
+  max-width: 250px; /* Limita el ancho máximo */
+  padding: 12px 5px !important;
+  height: 27px;
   border-radius: 15px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
   text-align: center;
   font-family: 'Arapey', serif;
-  font-size: 35px;
+  font-size: 31.4;
   line-height: 35px; /* Alineación vertical del texto */
-  margin-top: -80px;
-  margin-left: 30px;
+  margin-top: -100px;
+  margin-left: 70px;
   white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  font-weight: bold;
 }
 
 
@@ -121,7 +122,7 @@ div{
 
  
   .descripcionHome {
-    width: 350px;
+    width: 380px;
     height: 120px; /* Ajustar la altura para tres renglones */
     opacity: 0;
     transform: translateY(100%);
@@ -135,8 +136,8 @@ div{
     box-shadow: 0px 0px 10px rgba(2, 2, 2, 0.1); /* Agrega una sombra suave */
     color: #FAD4AF;
     font-family: 'Arapey', serif;   
-
-   
+    font-weight: bold;
+    text-align: justify;
     display: flex; /* Establecer el contenedor como flex */
     align-items: center; /* Centrar verticalmente */
     justify-content: center; /* Centrar horizontalmente */
