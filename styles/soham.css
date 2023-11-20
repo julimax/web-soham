@@ -1,3 +1,12 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Evita la barra de desplazamiento */
+}
+ 
+div{
+    margin: 0;
+}
+
 .bodyMain {
     display: flex;
     background-image: url('../images/fondoBloque2.png');
@@ -58,14 +67,7 @@
     font-style: normal;
   }
 
-body {
-    margin: 0;
-    overflow: hidden; /* Evita la barra de desplazamiento */
-}
- 
-div{
-    margin: 0;
-}
+
 
 .itemSohamDiv {
     display: block; /* Usa el modelo de caja flexible */

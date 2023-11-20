@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Evita la barra de desplazamiento */
+}
+ 
+div{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'RocaOne';
+    src: url('../fonts/Roca\ Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Arapey';
+    src: url('../fonts/Arapey-Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.mainClases {
+    width: 100%;
+    display: flex; /* Usa el modelo de caja flexible */
+    justify-content: space-around; /* Centra los elementos horizontalmente */
+    height: 660px;    
+    background-color: #FAD4AF;
+    flex-direction: row;    
+    font-family: 'RocaOne';
+}
+
+.clasesPresenciales {
+    width: 50%;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    text-align: center; 
+}
+
+.clasesOnline {
+    width: 50%;
+    background-color: #EBBB8D;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    text-align: center; 
+}
+
+.clasesImagen {
+    width: 95%;
+    height: 55%;
+    animation: aparecer 1.5s ease-out;
+}
+
+.clasesTitulo {
+    font-size: 180%;
+    animation: aparecer 1.5s ease-out;
+}
+
+.clasesTexto {
+    font-size: 180%;
+    color: #280B02;
+    font-family: 'Arapey', serif;
+    font-weight: bold;
+    animation: aparecer 1.5s ease-out;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.pop-animacion {
+    animation: pop 0.5s ease-out; /* Puedes ajustar la duración y la función de tiempo según tus preferencias */
+}
+
+
