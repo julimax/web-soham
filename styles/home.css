@@ -7,6 +7,18 @@
 
   /* Resto de tus estilos para el fondo */
   background-color: #FAD4AF;
+    /* Media query para pantallas más pequeñas que 1000px */
+  @media (max-width: 1000px) {
+    height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
+  }
+
+  @media (max-width: 770px) {
+    height: 370px; 
+  }
+
+  @media (max-width: 600px) {
+    height: 320px; 
+  }
 }
 
 .home::before {
@@ -23,12 +35,16 @@
   z-index: 0;
   margin: 0;
   padding: 0;
+  background-position: right top; /* Ajusta la posición a la derecha y superior */
+  background-origin: content-box; 
+
+
 }
 
 .mainHome{
   display: block;
   z-index: 1;
-  margin-left: 150px;
+  margin-left: 10%;
 }
 
 .mainHome body{
@@ -75,10 +91,10 @@ div{
   .titleSoham {
     position: relative;
     color: #FAD4AF;
-    margin-top: 120px;
+    margin-top: 35%;
     font-family: 'RocaOne', sans-serif;
     letter-spacing: 1px;
-    font-size: 95; /* Asegúrate de incluir la unidad (px) para el tamaño de la fuente */
+    font-size: 600%; /* Asegúrate de incluir la unidad (px) para el tamaño de la fuente */
 
     /* Establecer el punto de partida fuera de la pantalla */
     transform: translateX(-100%);
@@ -86,6 +102,27 @@ div{
 
     /* Animación para la aparición */
     animation: aparecerTitulo 1s forwards;
+
+    @media (max-width: 1000px) {
+      font-size: 450%;
+      margin-top: 20%;
+      margin-bottom: 25%;
+      margin-left: 5%;
+    }
+
+    @media (max-width: 770px) {
+      font-size: 300%;
+      margin-top: 20%;
+      margin-bottom: 25%;
+      margin-left: 5%;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 200%;
+      margin-top: 45%;
+      margin-bottom: 25%;
+      margin-left: 3%;
+    }
 }
 
 @keyframes aparecerTitulo {
@@ -112,7 +149,7 @@ div{
   background-color: #EBBB8D;
   max-width: 230px; /* Limita el ancho máximo */
   padding: 2px 2px 5px 2px !important;
-  height: 27px;
+  height: 5%;
   border-radius: 15px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -125,6 +162,29 @@ div{
   white-space: nowrap; /* Evita que el texto se divida en varias líneas */
   font-weight: bold;
   letter-spacing: 1px;
+
+  @media (max-width: 1000px) {
+    max-width: 180px; /* Nuevo valor de altura para pantallas más pequeñas */
+    font-size: 21;
+  }
+
+  @media (max-width: 770px) {
+    max-width: 130px; /* Nuevo valor de altura para pantallas más pequeñas */
+    font-size: 13;
+    margin-top: -80px;
+    height: 15px;
+    margin-left: 40px;
+    line-height: 25px;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 90px; /* Nuevo valor de altura para pantallas más pequeñas */
+    font-size: 10;
+    margin-top: -50px;
+    height: 8px;
+    margin-left: 20px;
+    line-height: 12px;
+  }
 }
 
 
@@ -154,6 +214,31 @@ div{
     justify-content: center; /* Centrar horizontalmente */
     overflow: hidden; /* Ocultar cualquier exceso de texto */
     margin-left: -30px;
+
+    @media (max-width: 1000px) {
+      width: 300px;
+      height: 90px; /* Ajustar la altura para tres renglones */
+      font-size: 25px; 
+    }
+
+    @media (max-width: 770px) {
+      width: 250px;
+      height: 75px; /* Ajustar la altura para tres renglones */
+      font-size: 20px; 
+    }
+
+    @media (max-width: 770px) {
+      width: 250px;
+      height: 75px; /* Ajustar la altura para tres renglones */
+      font-size: 20px; 
+    }
+
+    @media (max-width: 600px) {
+      width: 150px;
+      height: 50px; /* Ajustar la altura para tres renglones */
+      font-size: 15px; 
+      margin-top: 40px;
+    }
 }
 
 
