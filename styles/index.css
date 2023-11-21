@@ -1,3 +1,5 @@
+/* general */ 
+
 body{
     background-color: #FAD4AF;
     margin: 0;
@@ -10,11 +12,15 @@ body{
     height: 35px;
 }
 
+/* bloque home */ 
+
 .homePage {
     width: 100%;
     height: 670px;
     overflow: hidden; 
 }
+
+/* bloque soham */ 
 
 .bloqueSoham {
     width: 100%;
@@ -25,8 +31,7 @@ body{
     height: 660px;
 }
 
-  
-
+/* bloque clases */ 
   
 .divClases {
     height: 660px;
@@ -37,8 +42,16 @@ body{
     height: 660px;
 }
 
+/* bloque4 */ 
+
 .bloque4{
     width: 100%;
     height: 660px;
 }
 
+.divBloque4 {
+    width: 100%;
+    height: 660px;
+}
+
+/* bloque 5 */ 
