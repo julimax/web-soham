@@ -234,8 +234,8 @@ div{
     }
 
     @media (max-width: 600px) {
-      width: 150px;
-      height: 50px; /* Ajustar la altura para tres renglones */
+      width: 135px;
+      height: 70px; /* Ajustar la altura para tres renglones */
       font-size: 15px; 
       margin-top: 40px;
     }
