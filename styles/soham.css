@@ -78,7 +78,7 @@ div{
 
 .itemImagen {
     width: 110%;
-    height: 70%;
+    height: auto;
     animation: aparecerImagen 2s forwards;
 }
 
