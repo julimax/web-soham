@@ -25,7 +25,7 @@ div{
     width: 100%;
     display: flex; /* Usa el modelo de caja flexible */
     justify-content: space-around; /* Centra los elementos horizontalmente */
-    height: 660px;    
+    height: 100%;    
     background-color: #FAD4AF;
     flex-direction: row;    
     font-family: 'RocaOne';
