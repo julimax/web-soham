@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Evita la barra de desplazamiento */
+}
+ 
+div{
+    margin: 0;
+}
+
+
+.mainBloque5 {
+    width: 100%;
+    background-color: #fad4af;
+    display: block;
+    height: 100%;
+
+}
+
+.subMainBloque5 {
+    display: block;
+}
+
+.titulo-content{
+    display: flex; /* Usa el modelo de caja flexible */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 60%;
+    width: 100%;
+    font-size: 200%;
+    color: #2F1714;
+    justify-content: space-between;
+}
+
+.imagenBloque5{
+    max-width: 600px;
+    height: auto;
+    margin-top: -60px;
+    margin-left: -100px;
+}
+
+
+
+.titulo-texto {
+    margin-right: 400px; /* Ajusta este valor según la cantidad que desees mover el texto hacia la izquierda */
+    width: 60%;
+    display: inline;
+    
+}
+
+/* Tu archivo CSS */
+
+/* Tu archivo CSS */
+
+/* Tu archivo CSS */
+
+.titulo-texto h2 {
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+    overflow: hidden; /* Oculta cualquier texto que exceda el ancho del contenedor */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) si el texto está recortado */
+    max-width: 100%; /* Evita que el texto exceda el ancho del contenedor */
+    font-size: 130%; /* Tamaño del texto */
+    color: #FF9540; /* Color del texto */
+    margin-top: -150px;
+    margin-left: -15%;
+
+    text-align: center; /* Alineación a la izquierda */
+    line-height: 1.4; /* Espaciado entre líneas */
+    font-family: 'RocaOne'; /* Estilo de fuente */
+}
+
+
+
+.Info-Redes {
+    display: flex;
+    justify-content: space-between; /* Espacio entre elementos */
+    margin-left: 10%;
+    text-align: center;
+    font-family: 'RocaOne'; /* Estilo de fuente */
+    color: #2F1714;
+
+}
+
+
+
+.Info-whatsapp {
+    text-align: right; /* Alinea el contenido hacia la derecha */
+    margin-right: 10%;
+    text-align: center;
+    font-family: 'RocaOne'; /* Estilo de fuente */
+    body {
+    margin: 0;
+    overflow: hidden; /* Evita la barra de desplazamiento */
+}
+ 
+div{
+    margin: 0;
+}
+
+
+.mainBloque5 {
+    width: 100%;
+    background-color: #fad4af;
+    display: block;
+    height: 100%;
+
+}
+
+.subMainBloque5 {
+    display: block;
+}
+
+.titulo-content{
+    display: flex; /* Usa el modelo de caja flexible */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 60%;
+    width: 100%;
+    font-size: 200%;
+    color: #2F1714;
+    justify-content: space-between;
+}
+
+.imagenBloque5{
+    max-width: 600px;
+    height: auto;
+    margin-top: -60px;
+    margin-left: -100px;
+}
+
+
+
+.titulo-texto {
+    margin-right: 400px; /* Ajusta este valor según la cantidad que desees mover el texto hacia la izquierda */
+    width: 60%;
+    display: inline;
+    
+}
+
+/* Tu archivo CSS */
+
+/* Tu archivo CSS */
+
+/* Tu archivo CSS */
+
+.titulo-texto h2 {
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+    overflow: hidden; /* Oculta cualquier texto que exceda el ancho del contenedor */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) si el texto está recortado */
+    max-width: 100%; /* Evita que el texto exceda el ancho del contenedor */
+    font-size: 130%; /* Tamaño del texto */
+    color: #FF9540; /* Color del texto */
+    margin-top: -150px;
+    margin-left: -15%;
+
+    text-align: center; /* Alineación a la izquierda */
+    line-height: 1.4; /* Espaciado entre líneas */
+    font-family: 'RocaOne'; /* Estilo de fuente */
+}
+
+
+
+/* Tu archivo CSS */
+
+.Info-Redes {
+    display: flex;
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: flex-start; /* Alinea los elementos arriba */
+    margin-left: 10%;
+    text-align: center;
+    font-family: 'RocaOne'; /* Estilo de fuente */
+    color: #2F1714;
+}
+
+.Info-whatsapp {
+    text-align: right; /* Alinea el contenido hacia la derecha */
+    margin-right: 10%;
+    text-align: center;
+    font-family: 'RocaOne'; /* Estilo de fuente */
+    color: #2F1714;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'RocaOne';
+    src: url('../fonts/Roca\ Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arapey';
+    src: url('../fonts/Arapey-Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+
+}
+
+
+
+
+@font-face {
+    font-family: 'RocaOne';
+    src: url('../fonts/Roca\ Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arapey';
+    src: url('../fonts/Arapey-Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
