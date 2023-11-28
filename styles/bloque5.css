@@ -1,3 +1,7 @@
+
+
+
+
 body {
     margin: 0;
     overflow: hidden; /* Evita la barra de desplazamiento */
@@ -81,16 +85,16 @@ div{
 
 
 
-.Info-whatsapp {
+.InfoWhatsapp {
     text-align: right; /* Alinea el contenido hacia la derecha */
     margin-right: 10%;
     text-align: center;
     font-family: 'RocaOne'; /* Estilo de fuente */
-    body {
-    margin: 0;
     overflow: hidden; /* Evita la barra de desplazamiento */
 }
- 
+
+
+
 div{
     margin: 0;
 }
@@ -134,30 +138,7 @@ div{
     
 }
 
-/* Tu archivo CSS */
 
-/* Tu archivo CSS */
-
-/* Tu archivo CSS */
-
-.titulo-texto h2 {
-    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
-    overflow: hidden; /* Oculta cualquier texto que exceda el ancho del contenedor */
-    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) si el texto está recortado */
-    max-width: 100%; /* Evita que el texto exceda el ancho del contenedor */
-    font-size: 130%; /* Tamaño del texto */
-    color: #FF9540; /* Color del texto */
-    margin-top: -150px;
-    margin-left: -15%;
-
-    text-align: center; /* Alineación a la izquierda */
-    line-height: 1.4; /* Espaciado entre líneas */
-    font-family: 'RocaOne'; /* Estilo de fuente */
-}
-
-
-
-/* Tu archivo CSS */
 
 .Info-Redes {
     display: flex;
@@ -178,8 +159,25 @@ div{
 }
 
 
+.infoInstaDetalles {
+    display: flex;
+}
+
+.logoInsta {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
 
 
+
+@font-face {
+    font-family: 'Arapey';
+    src: url('../fonts/Arapey-Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
 
 @font-face {
     font-family: 'RocaOne';
@@ -194,25 +192,3 @@ div{
     font-weight: normal;
     font-style: normal;
   }
-  
-
-
-}
-
-
-
-
-@font-face {
-    font-family: 'RocaOne';
-    src: url('../fonts/Roca\ Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Arapey';
-    src: url('../fonts/Arapey-Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
-    font-weight: normal;
-    font-style: normal;
-  }
-  
