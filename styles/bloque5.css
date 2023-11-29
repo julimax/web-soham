@@ -1,162 +1,75 @@
-
-
-
-
 body {
     margin: 0;
     overflow: hidden; /* Evita la barra de desplazamiento */
 }
- 
-div{
+
+div {
     margin: 0;
 }
-
 
 .mainBloque5 {
     width: 100%;
     background-color: #fad4af;
     display: block;
     height: 100%;
-
 }
 
 .subMainBloque5 {
     display: block;
 }
 
-.titulo-content{
-    display: flex; /* Usa el modelo de caja flexible */
-    align-items: center; /* Centra los elementos verticalmente */
+.titulo-content {
+    display: flex;
+    align-items: center;
     height: 60%;
     width: 100%;
     font-size: 200%;
     color: #2F1714;
     justify-content: space-between;
 }
-
-.imagenBloque5{
-    max-width: 600px;
+.imagenB5 .imagenBloque5{
+    max-width: 800px;
     height: auto;
-    margin-top: -60px;
-    margin-left: -100px;
+    margin-left: -18%;
+    margin-bottom: -5%;
 }
-
-
 
 .titulo-texto {
-    margin-right: 400px; /* Ajusta este valor según la cantidad que desees mover el texto hacia la izquierda */
+    margin-right: 400px;
     width: 60%;
     display: inline;
-    
-}
-
-/* Tu archivo CSS */
-
-/* Tu archivo CSS */
-
-/* Tu archivo CSS */
-
-.titulo-texto h2 {
-    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
-    overflow: hidden; /* Oculta cualquier texto que exceda el ancho del contenedor */
-    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) si el texto está recortado */
-    max-width: 100%; /* Evita que el texto exceda el ancho del contenedor */
-    font-size: 130%; /* Tamaño del texto */
-    color: #FF9540; /* Color del texto */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    font-size: 100%;
+    color: #FF9540;
     margin-top: -150px;
-    margin-left: -15%;
-
-    text-align: center; /* Alineación a la izquierda */
-    line-height: 1.4; /* Espaciado entre líneas */
-    font-family: 'RocaOne'; /* Estilo de fuente */
+    margin-left: -25%;
+    text-align: center;
+    line-height: 1.4;
+    font-family: 'RocaOne';
 }
-
-
 
 .Info-Redes {
     display: flex;
-    justify-content: space-between; /* Espacio entre elementos */
-    margin-left: 10%;
-    text-align: center;
-    font-family: 'RocaOne'; /* Estilo de fuente */
-    color: #2F1714;
-
-}
-
-
-
-.InfoWhatsapp {
-    text-align: right; /* Alinea el contenido hacia la derecha */
-    margin-right: 10%;
-    text-align: center;
-    font-family: 'RocaOne'; /* Estilo de fuente */
-    overflow: hidden; /* Evita la barra de desplazamiento */
-}
-
-
-
-div{
-    margin: 0;
-}
-
-
-.mainBloque5 {
-    width: 100%;
-    background-color: #fad4af;
-    display: block;
-    height: 100%;
-
-}
-
-.subMainBloque5 {
-    display: block;
-}
-
-.titulo-content{
-    display: flex; /* Usa el modelo de caja flexible */
-    align-items: center; /* Centra los elementos verticalmente */
-    height: 60%;
-    width: 100%;
-    font-size: 200%;
-    color: #2F1714;
     justify-content: space-between;
-}
-
-.imagenBloque5{
-    max-width: 600px;
-    height: auto;
-    margin-top: -60px;
-    margin-left: -100px;
-}
-
-
-
-.titulo-texto {
-    margin-right: 400px; /* Ajusta este valor según la cantidad que desees mover el texto hacia la izquierda */
-    width: 60%;
-    display: inline;
-    
-}
-
-
-
-.Info-Redes {
-    display: flex;
-    justify-content: space-between; /* Espacio entre elementos */
-    align-items: flex-start; /* Alinea los elementos arriba */
+    align-items: flex-start;
     margin-left: 10%;
     text-align: center;
-    font-family: 'RocaOne'; /* Estilo de fuente */
+    font-family: 'RocaOne';
     color: #2F1714;
+    margin-top: 1%;
+    font-size: 130%;
 }
 
-.Info-whatsapp {
-    text-align: right; /* Alinea el contenido hacia la derecha */
+.Info-Whatsapp {
+    text-align: right;
     margin-right: 10%;
     text-align: center;
-    font-family: 'RocaOne'; /* Estilo de fuente */
-    color: #2F1714;
+    font-family: 'RocaOne';
+    overflow: hidden;
 }
+
 
 
 .infoInstaDetalles {
@@ -164,31 +77,46 @@ div{
 }
 
 .logoInsta {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin-top: 15px;
 }
 
+.InfoProgramacion {
+    display: flex; /* Utilizamos flexbox para organizar los elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: flex-end;
+}
+
+.InfoNumero {
+    display: flex; /* También utilizamos flexbox para los elementos internos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    margin-right: 20px; /* Espacio entre los elementos */
+}
+
+.Datos {
+    margin-right: 10px; /* Espacio entre el texto y la imagen */
+}
+
+.logoW {
+    width: 40px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto; /* Para mantener la proporción */
+}
+
+
+
 
 
 @font-face {
     font-family: 'Arapey';
-    src: url('../fonts/Arapey-Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-
-@font-face {
-    font-family: 'RocaOne';
-    src: url('../fonts/Roca\ Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+    src: url('../fonts/Arapey-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Arapey';
-    src: url('../fonts/Arapey-Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+    font-family: 'RocaOne';
+    src: url('../fonts/Roca\ Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
+}
