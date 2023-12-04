@@ -1,0 +1,87 @@
+.textoBloque6 {
+    display: block; /* Cambia a bloque para asegurar la visualización */
+    margin-left: 35%;
+    margin-top: 5%;
+    color: #FAD4AF;
+    font-size: 50px;
+    font-family: 'RocaOne';
+    
+
+}
+
+.divImagenes .ImgContenido {
+    display: flex;
+    justify-content: space-around; /* Ajusta el espacio entre los elementos */
+    margin-top: 40px;
+}
+
+
+.imgContainer {
+    text-align: center; /* Centra el contenido */
+    width: 35%; /* Ajusta el ancho */
+    margin-top: 5%;
+    margin-left: -10%; /* Ajusta el margen izquierdo para mover el contenido a la izquierda */
+}
+
+
+.imgContainer img {
+    width: 150%; /* Ajusta el ancho al 150% del contenedor */
+    height: auto; /* Mantiene la proporción original */
+    max-width: none; /* Elimina la restricción del ancho máximo */
+    max-height: none; /* Elimina la restricción de la altura máxima */
+    margin-left: -30%;
+    margin-top: -50px; 
+    opacity: 0; /* Configura la opacidad inicial en 0 */
+    animation: aparecer 2s ease forwards; /* Define la animación */
+}
+
+/* Define la animación de la burbuja */
+@keyframes aparecer {
+    0% {
+        opacity: 0; /* Opacidad inicial en 0 */
+        transform: scale(0); /* Escala inicial en 0 */
+    }
+    100% {
+        opacity: 1; /* Opacidad final en 1 */
+        transform: scale(1); /* Escala final en 1 */
+    }
+}
+
+.imgContainer .imgAn {
+    margin-left: 10px; /* Ajusta el margen izquierdo para mover la imagen a la izquierda */
+}
+
+
+.NombreAn {
+    color: #FAD4AF;
+    font-family: 'RocaOne';
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    margin-bottom: 10px; /* Espacio entre la imagen y el nombre */
+    margin-left: 260px; /* Mueve el elemento a la derecha */
+}
+
+
+.NombreBau {
+    color: #FAD4AF;
+    font-family: 'RocaOne';
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    margin-bottom: 10px; /* Espacio entre la imagen y el nombre */
+    margin-right: 50px;
+}
+
+
+
+
+@font-face {
+    font-family: 'Arapey';
+    src: url('../fonts/Arapey-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RocaOne';
+    src: url('../fonts/Roca\ Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
