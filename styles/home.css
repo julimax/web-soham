@@ -42,9 +42,10 @@
 }
 
 .mainHome{
-  display: block;
+  display: flex;
   z-index: 1;
   margin-left: 10%;
+  width: 100%;
 }
 
 .mainHome body{
@@ -253,3 +254,55 @@ div{
       transform: translateY(0);
     }
   }
+
+
+.alianceLogo {
+  position: absolute;
+  margin-left: 83%;
+  margin-top: 5%;
+  z-index: 1;
+  @media (max-width: 1000px) {
+    margin-left: 79%;
+    margin-top: 5%;
+  }
+  @media (max-width: 770px) {
+    margin-left: 77%;
+    margin-top: 5%;
+}
+animation: pop 0.9s ease-out;
+}
+
+.alianceLogoImagen {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-right: 10%;
+    @media (max-width: 1000px) {
+      width: 250px;
+      height: auto;
+    }
+    @media (max-width: 770px) {
+      width: 180px;
+      height: auto;
+  }
+  @media (max-width: 600px) {
+    width: 110px;
+    height: auto;
+  }
+
+}
+
+
+
+/* Define la animación 'pop' */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

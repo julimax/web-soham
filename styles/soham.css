@@ -16,6 +16,18 @@ div{
     background-position: center;
     background-position-y: +70%;
     height: 100%;
+
+    @media (max-width: 1000px) {
+        height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
+      }
+
+      @media (max-width: 770px) {
+        height: 370px; 
+      }
+    
+      @media (max-width: 600px) {
+        height: 320px; 
+      }
 }
 
 .sohamMain {
@@ -31,7 +43,20 @@ div{
     font-family: 'RocaOne';
     font-size: 200%;
     color: #2F1714;
+
+    @media (max-width: 1000px) {
+        font-size: 170%;
+      }
+
+      @media (max-width: 770px) {
+        font-size: 150%;
+      }
+    
+      @media (max-width: 600px) {
+        font-size: 120%;
+      }
 }
+
 
 .sohamName {
     display: flex;
@@ -45,6 +70,18 @@ div{
     line-height: 20%;
     transform: scaleY(1.2);
     animation: aparecerTitulo 2s forwards;
+
+    @media (max-width: 1000px) {
+        font-size: 400%;
+      }
+  
+      @media (max-width: 770px) {
+        font-size: 300%;
+      }
+  
+      @media (max-width: 600px) {
+        font-size: 200%;
+      }
 }
 
 @keyframes aparecerTitulo {
@@ -82,8 +119,16 @@ div{
     animation: aparecerImagen 2s forwards;
 }
 
+.itemImagen:hover {
+    transform: scale(1.1) !important; /* Escalamos la imagen al 110% del tamaño original */
+}
+
 .itemSubtitulo {
     animation: aparecerSubitulo 2s forwards;
+}
+
+.itemSubtitulo:hover {
+    color: #772E1D;
 }
 
 @keyframes aparecerSubitulo {

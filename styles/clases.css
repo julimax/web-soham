@@ -48,13 +48,37 @@ div{
 
 .clasesImagen {
     width: 95%;
-    height: 55%;
+    height: auto;
     animation: aparecer 1.5s ease-out;
+
+    @media (max-width: 1000px) {
+        width: 85%;
+      }
+
+      @media (max-width: 770px) {
+        width: 75%;
+      }
+    
+      @media (max-width: 600px) {
+        width: 65%;
+      }
 }
 
 .clasesTitulo {
     font-size: 180%;
     animation: aparecer 1.5s ease-out;
+
+    @media (max-width: 1000px) {
+        font-size: 150%;
+      }
+
+      @media (max-width: 770px) {
+        font-size: 130%;
+      }
+    
+      @media (max-width: 600px) {
+        font-size: 110%;
+      }
 }
 
 .clasesTexto {
@@ -63,6 +87,18 @@ div{
     font-family: 'Arapey', serif;
     font-weight: bold;
     animation: aparecer 1.5s ease-out;
+
+    @media (max-width: 1000px) {
+        font-size: 160%;
+      }
+
+      @media (max-width: 770px) {
+        font-size: 140%;
+      }
+    
+      @media (max-width: 600px) {
+        font-size: 120%;
+      }
 }
 
 @keyframes aparecer {
