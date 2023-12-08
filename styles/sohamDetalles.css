@@ -1,0 +1,96 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navBar{
+    width: 100%;
+    height: 35px;
+    margin-top: 0%;
+}
+
+.mainSohamDetalles {
+    width: 100%;
+    height: 500px;
+    background-color: #1D0E05;
+    height: 700px;
+}
+
+.bloque1 {
+    display: flex;
+    width: 100%;
+}
+
+.bloque1A {
+    display: block;
+    width: 65%;
+}
+
+.bloque1B {
+
+    width: 35%;
+}
+
+.bloque1AImagenes{
+    display: flex;
+}
+
+.sohamImagen1 {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 35%;
+    animation: pop 0.9s ease-out;
+}
+
+.sohamImagen2 {
+    width: 50%;
+    height: auto;
+    margin-left: 35%;
+    animation: pop 0.9s ease-out;
+}
+
+.bloque1ATexto{
+    margin-left: 5%;
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    font-family: 'RocaOne';
+}
+
+.sohamCircular {
+    width: 230%;
+    margin-left: -65%;
+    height: auto;
+    animation: aparecer 2s ease-in-out forwards;
+}
+
+@keyframes pop {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+@font-face {
+    font-family: 'RocaOne';
+    src: url('../fonts/Roca\ Bold.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+    font-weight: normal;
+    font-style: normal;
+}
