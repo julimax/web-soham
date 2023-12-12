@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Evita la barra de desplazamiento */
+    background-color: #280B02;
+}
+.mainBautista{
+    display: flex;
+}
+
+.Titulo-Nombre {
+    color: #EBBB8D;
+    font-size: 250%; /* Aumenta el tamaño de la fuente */
+    font-family: 'RocaOne';
+    margin-top: -5%; /* Ajusta el margen superior si es necesario */
+    margin-left: 10%;
+    line-height: 1.2; /* Reducir el espacio entre líneas */
+    animation: slideDown 1.5s forwards; /* Animación de arriba hacia abajo */
+}
+
+
+.Div-Informacion {
+    width: 50%; /* Ocupa el 50% del ancho */
+    float: left; /* Flotar a la izquierda para estar uno al lado del otro */
+    box-sizing: border-box; /* Para incluir padding y bordes en el ancho */
+    padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+    margin-top: 1%;
+}
+
+.divFotoBautista {
+    width: 50%; /* Ocupa el 50% del ancho */
+    float: left; /* Flotar a la izquierda para estar uno al lado del otro */
+    box-sizing: border-box; /* Para incluir padding y bordes en el ancho */
+    padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+}
+
+
+
+/* Animación para el texto */
+.div-NombreInformacion .texto {
+    color: white;
+    font-size: 180%;
+    line-height: 1.2; /* Espaciado entre líneas para mejorar legibilidad */
+    margin-top: -2%;
+    margin-left: 1%;
+    font-family: 'Arapey';
+    animation: slideIn 1.8s forwards; /* Animación de izquierda a derecha */
+
+}
+
+
+
+.divFotoBautista .ImagenDeBautista {
+    width: 190%; /* O el ancho que desees */
+    height: auto;
+margin-left: -87%;
+margin-top: -3%;
+animation: slideLeft 2s forwards; /* Nueva animación para el párrafo */
+
+}
+
+
+
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+@font-face {
+    font-family: 'Arapey';
+    src: url('../fonts/Arapey-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RocaOne';
+    src: url('../fonts/Roca\ Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Arapey';
+    src: url('../fonts/Arapey-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RocaOne';
+    src: url('../fonts/Roca\ Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
