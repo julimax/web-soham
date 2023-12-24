@@ -1,7 +1,25 @@
 body {
     margin: 0;
     overflow: hidden; /* Evita la barra de desplazamiento */
+
+
+    @media (max-width: 1000px) {
+        height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
+      }
+    
+      @media (max-width: 770px) {
+        height: 370px; 
+      }
+    
+      @media (max-width: 600px) {
+        height: 320px; 
+      }
 }
+
+
+
+
+
 
 div {
     margin: 0;
@@ -26,6 +44,22 @@ div {
     font-size: 200%;
     color: #2F1714;
     justify-content: space-between;
+
+
+
+     @media (max-width: 1000px) {
+        font-size: 130%;
+      }
+    
+      @media (max-width: 770px) {
+        font-size: 80%;
+      }
+    
+      @media (max-width: 600px) {
+        font-size: 80%;
+      }
+
+      
 }
 .imagenB5 .imagenBloque5{
     max-width: 600px;
@@ -48,6 +82,17 @@ div {
     text-align: center;
     line-height: 1.4;
     font-family: 'RocaOne';
+
+    @media (max-width: 1000px) {
+        font-size: 120%;
+        margin-left: -35%;
+      }
+    
+      @media (max-width: 770px) {
+        font-size: 80%;
+        margin-left: -30%;
+      }
+    
 }
 
 .Info-Redes {
@@ -74,6 +119,14 @@ div {
 
 .infoInstaDetalles {
     display: flex;
+
+
+   
+    @media (max-width: 1000px) {
+          font-size: 80%;
+          margin-left: 30%;
+      }
+
 }
 
 .logoInsta {
@@ -86,14 +139,18 @@ div {
     display: flex; /* Utilizamos flexbox para organizar los elementos */
     align-items: center; /* Alinea los elementos verticalmente */
     justify-content: flex-end;
-    margin-top: 1%;
+    margin-top: -0.5%;
+
+ 
+   
 }
 
 .InfoNumero {
     display: flex; /* También utilizamos flexbox para los elementos internos */
     align-items: center; /* Alinea los elementos verticalmente */
     margin-right: 20px; /* Espacio entre los elementos */
-}
+
+  
 
 .Datos {
     margin-right: 10px; /* Espacio entre el texto y la imagen */
@@ -131,3 +188,14 @@ div {
     font-weight: normal;
     font-style: normal;
 }
+
+
+@media (max-width: 1000px) {
+   .InfoProgramacion, .InfoNumero{
+
+   }
+    
+}
+}
+
+
