@@ -1,0 +1,140 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinea el contenido hacia arriba */
+  align-items: center;
+  height: 1000;
+  background-color: #B58150;
+}
+
+.titulo-ClasesVirtuales {
+  margin-top: -30px; /* Ajusta el margen superior según lo deseado */
+  text-align: center;
+}
+
+.titulo {
+  /* Estilos adicionales para el título si es necesario */
+  color: #280B02;
+  font-family: 'RocaOne';
+  text-transform: uppercase;
+  font-size: 50px;
+
+}
+
+
+.div-imagenes1{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}
+
+
+.imagen1 {
+  width: 400px; /* Ajusta el ancho solo de la imagen1 */
+  height: auto; /* Ajusta la altura automáticamente */
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); /* Agrega una transición más lenta y armoniosa */
+}
+
+.imagen1:hover {
+  transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse sobre ella */
+}
+
+
+.imagen2 {
+  width: 300px; /* Ancho normal de la imagen2 */
+  height: auto; /* Ajusta la altura automáticamente */
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); /* Agrega una transición más lenta y armoniosa */
+}
+
+
+.imagen2:hover {
+  transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse sobre ella */
+}
+
+.div-imagenes1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Ajusta el margen superior entre las imágenes */
+  margin-bottom: 20px; /* Ajusta el margen inferior entre las imágenes */
+}
+
+.imagen1, .imagen2 {
+  margin: 0 200px; /* Ajusta el margen horizontal entre las imágenes */
+}
+
+
+
+.div-imagenes2{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.clickhere{
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); /* Agrega una transición más lenta y armoniosa */
+}
+
+
+.clickhere:hover {
+  transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse sobre ella */
+}
+
+.imagen3{
+  width: 80%;
+  margin-top: 40%;
+  margin-left: 10%;
+}
+
+
+
+.div-imagenes3{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+ 
+}
+
+
+.imagen4 {
+  width: 60%;
+  height: auto;
+  margin-top: -250px;
+  margin-left: 180px; /* Desplazar hacia la izquierda */
+}
+
+.imagen5{
+  width: 70%;
+  margin-top: 25%;
+  margin-left: 20%;
+}
+
+
+
+.decoracion{
+  width:70%;
+  margin-top: -15%;
+  margin-left: -14%;
+}
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'RocaOne';
+  src: url('../fonts/Roca\ Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
