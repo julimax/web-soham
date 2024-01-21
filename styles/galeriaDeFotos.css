@@ -62,7 +62,7 @@ html {
 .ig {
   width: 8%;
   position: relative;
-  top: -125%; /* Bajando el elemento .ig un 10% */
+  top: -80%; /* Bajando el elemento .ig un 10% */
   margin-left: 3%;
   animation: aparecerDesdeArriba 1.5s ease-in-out forwards;
 }
@@ -70,7 +70,7 @@ html {
 .infoIg {
   font-size: 200%;
   position: relative;
-  top: -170%; /* Bajando el elemento .infoIg un 10% */
+  top: -125%; /* Bajando el elemento .infoIg un 10% */
   color: #fad4af;
   margin-left: 44%;
   font-family: "Arapey";

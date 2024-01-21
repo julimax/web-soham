@@ -43,7 +43,7 @@ body {
 .imgContainer {
     text-align: center; /* Centra el contenido */
     width: 35%; /* Ajusta el ancho */
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: -10%; /* Ajusta el margen izquierdo para mover el contenido a la izquierda */
 }
 

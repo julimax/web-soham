@@ -16,6 +16,14 @@ body {
     }
 }
 
+
+.navBar{
+    width: 100%;
+    height: 35px;
+    margin-top: 0%;
+    z-index: 100;
+}
+
 .mainAndrea {
     display: flex; /* Utilizamos flexbox para organizar los bloques */
 }
@@ -29,6 +37,7 @@ body {
     width: 220%; /* La imagen ocupa todo el ancho del contenedor */
     height: auto;
     animation: slideIn 1.8s forwards; /* Animación de izquierda a derecha */
+    margin-top: -1.5%;
 }
 
 .Div-Informacion {
@@ -66,7 +75,7 @@ body {
     color: white;
     font-size: 125%;
     line-height: 1.6; /* Espaciado entre líneas para mejorar legibilidad */
-    margin-top: -6%;
+    margin-top:5%;
     margin-left: -7%;
     font-family: 'Arapey';
     animation: slideLeft 2s forwards; /* Nueva animación para el párrafo */
