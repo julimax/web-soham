@@ -13,8 +13,18 @@ body {
   background-color: #B58150;
 }
 
+
+
+.navBar {
+  width: 100%;
+  height: 35px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
 .titulo-ClasesVirtuales {
-  margin-top: -30px; /* Ajusta el margen superior según lo deseado */
+  margin-top: 10px; /* Ajusta el margen superior según lo deseado */
   text-align: center;
 }
 
@@ -93,6 +103,13 @@ body {
   width: 80%;
   margin-top: 40%;
   margin-left: 10%;
+
+  transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1); /* Agrega una transición más lenta y armoniosa */
+}
+
+
+.imagen3:hover {
+  transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse sobre ella */
 }
 
 
@@ -103,19 +120,39 @@ body {
   justify-content: center;
  
 }
+.body::-webkit-scrollbar{
+  width: 10px;
+}
 
+.body::-webkit-scrollbar-thumb{
+  background: #373431;
+  border-radius: 5px;
+
+}
 
 .imagen4 {
   width: 60%;
   height: auto;
   margin-top: -250px;
   margin-left: 180px; /* Desplazar hacia la izquierda */
+  transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1); /* Agrega una transición más lenta y armoniosa */
+}
+
+
+.imagen4:hover {
+  transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse sobre ella */
 }
 
 .imagen5{
   width: 70%;
   margin-top: 25%;
   margin-left: 20%;
+  transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1); /* Agrega una transición más lenta y armoniosa */
+}
+
+
+.imagen5:hover {
+  transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse sobre ella */
 }
 
 

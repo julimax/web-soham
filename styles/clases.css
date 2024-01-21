@@ -65,21 +65,29 @@ div{
 }
 
 .clasesTitulo {
-    font-size: 180%;
-    animation: aparecer 1.5s ease-out;
+  font-size: 180%;
+  animation: aparecer 1.5s ease-out;
 
-    @media (max-width: 1000px) {
-        font-size: 150%;
-      }
+  @media (max-width: 1000px) {
+      font-size: 150%;
+  }
 
-      @media (max-width: 770px) {
-        font-size: 130%;
-      }
-    
-      @media (max-width: 600px) {
-        font-size: 100%;
-      }
+  @media (max-width: 770px) {
+      font-size: 130%;
+  }
+  
+  @media (max-width: 600px) {
+      font-size: 100%;
+  }
+
+  /* Efecto de agrandamiento al pasar el mouse */
+  transition: transform 0.3s ease-in-out;
 }
+
+.clasesTitulo:hover {
+  transform: scale(1.05); /* Aumenta el tamaño al 105% al pasar el mouse */
+}
+
 
 .clasesTexto {
     font-size: 180%;
