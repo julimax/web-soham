@@ -73,9 +73,9 @@ body {
 /* Animación para el texto */
 .texto {
     color: white;
-    font-size: 125%;
+    font-size: 110%;
     line-height: 1.6; /* Espaciado entre líneas para mejorar legibilidad */
-    margin-top:5%;
+    margin-top:3%;
     margin-left: -7%;
     font-family: 'Arapey';
     animation: slideLeft 2s forwards; /* Nueva animación para el párrafo */
