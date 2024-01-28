@@ -159,8 +159,10 @@ div {
 
 
 
+
 .infoInstaDetalles {
     display: flex;
+    margin-left: 20px; 
 
 
    
@@ -189,12 +191,18 @@ div {
 }
 
 .InfoNumero {
-    display: flex; /* También utilizamos flexbox para los elementos internos */
-    align-items: center; /* Alinea los elementos verticalmente */
-    margin-right: 20px; /* Espacio entre los elementos */
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  /* Agrega la propiedad de transición para la animación de zoom */
+  transition: transform 0.3s ease-in-out;
+}
 
-}  
-
+/* Agrega la regla de transformación al pasar el mouse */
+.InfoNumero:hover {
+  /* Aplica un pequeño zoom al 105% al pasar el mouse */
+  transform: scale(1.05);
+}
 .Datos {
     margin-right: 10px; /* Espacio entre el texto y la imagen */
     font-size: 100%;
@@ -205,13 +213,13 @@ div {
 .logoW {
     width: 30px; /* Ajusta el ancho de la imagen según sea necesario */
     height: auto; /* Para mantener la proporción */
-    margin-top: 4%;
+    margin-top:45%;
     font-family: 'RocaOne';
 }
 
 
 .numero{
-    margin-top: 7%;
+    margin-top:25%;
     font-family: 'RocaOne';
     font-size: 110%;
     
@@ -258,9 +266,37 @@ div {
 
 .imagenDelCentro{
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 40%;
   height: auto;
 }
+
+a {
+  color: inherit; /* Para heredar el color del texto del contenedor padre */
+  text-decoration: none; /* Para quitar el subrayado */
+}
+
+.infoInstaDetalles {
+  display: flex;
+  transition: transform 0.3s ease-in-out; /* Agregamos una transición suave */
+}
+
+.infoInstaDetalles:hover {
+  transform: scale(1.05); /* Un poco de zoom al pasar el mouse */
+}
+
+@media (max-width: 1000px) {
+  .infoInstaDetalles {
+    font-size: 80%;
+    margin-left: 30%;
+  }
+}
+
+
+
+
+
+
+  

@@ -50,9 +50,9 @@ body {
 /* Animación para el texto */
 .div-NombreInformacion .texto {
     color: white;
-    font-size: 175%;
+    font-size: 165%;
     line-height: 1.2; /* Espaciado entre líneas para mejorar legibilidad */
-    margin-top: -2%;
+    margin-top: 5%;
     margin-left: 1%;
     font-family: 'Arapey';
     animation: slideIn 1.8s forwards; /* Animación de izquierda a derecha */

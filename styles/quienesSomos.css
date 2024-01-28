@@ -83,6 +83,7 @@ body {
     font-size: 16px; /* Ajusta el tamaño del texto */
     margin-bottom: 10px; /* Espacio entre la imagen y el nombre */
     margin-left: 260px; /* Mueve el elemento a la derecha */
+    text-decoration: none !important; /* Quita el subrayado */
 }
 
 
@@ -94,6 +95,12 @@ body {
     margin-right: 50px;
 }
 
+
+a {
+    color: inherit; /* Para heredar el color del texto del contenedor padre */
+    text-decoration: none; /* Para quitar el subrayado */
+  }
+  
 
 
 @font-face {
