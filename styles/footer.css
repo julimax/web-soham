@@ -1,232 +1,177 @@
-body {
+*{
     margin: 0;
-    overflow: hidden; /* Evita la barra de desplazamiento */
-
-
-    @media (max-width: 1000px) {
-        height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
-      }
-    
-      @media (max-width: 770px) {
-        height: 370px; 
-      }
-    
-      @media (max-width: 600px) {
-        height: 320px; 
-      }
+    padding: 0;
 }
 
-
-
-
-
-
-
-div {
-    margin: 0;
-}
-
-.mainBloque5 {
+body{
+    background-color: #FAD4AF;
     width: 100%;
-    background-color: #fad4af;
-    display: block;
-    height: 100%;
-    @media (max-width: 1000px) {
-        height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
-      }
-  
-      @media (max-width: 770px) {
-        height: 370px; 
-      }
-    
-      @media (max-width: 600px) {
-        height: 320px; 
-      }
-}
-
-.subMainBloque5 {
-    display: block;
-}
-
-.titulo-content {
-    display: flex;
-    align-items: center;
-    height: 60%;
-    width: 100%;
-    font-size: 200%;
-    color: #2F1714;
-    justify-content: space-between;
-
-    @media (max-width: 1200px) {
-        font-size: 150%;
-      }
-
-     @media (max-width: 1000px) {
-        font-size: 130%;
-      }
-    
-      @media (max-width: 850px) {
-        font-size: 110%;
-      }
-    
-      @media (max-width: 600px) {
-        font-size: 80%;
-      }
-
-      
-}
-.imagenB5 .imagenBloque5{
-    max-width: 600px;
     height: auto;
-    margin-left: -13%;
-    margin-bottom: -5%;
-
-    @media (max-width: 1000px) {
-        max-width: 500px;
-      }
-  
-      @media (max-width: 770px) {
-        max-width: 400px;
-      }
-    
-      @media (max-width: 600px) {
-        max-width: 350px;
-      }
-
-      @media (max-width: 500px) {
-        max-width: 260px;
-      }
 }
 
-.titulo-texto {
-    margin-right: 400px;
-    width: 60%;
-    display: inline;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    font-size: 100%;
-    color: #FF9540;
-    margin-top: -150px;
-    margin-left: -20%;
-    text-align: center;
-    line-height: 1.4;
-    font-family: 'RocaOne';
 
-    @media (max-width: 1000px) {
-        font-size: 120%;
-        margin-left: -35%;
-      }
-    
-      @media (max-width: 770px) {
-        font-size: 80%;
-        margin-left: -30% !important;
-        margin-top: 1%;
-      }
-
-      @media (max-width: 600px) {
-        font-size: 110%;
-        margin-left: -30% !important;
-        margin-top: 1%;
-      }
-
-      @media (max-width: 500px) {
-        font-size: 80%;
-        margin-left: -30% !important;
-        margin-top: 1%;
-      }
-}
-
-.Info-Redes {
+.parte-superior{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-left: 10%;
-    text-align: center;
-    font-family: 'RocaOne';
-    color: #2F1714;
-    margin-top: -3%;
-    font-size: 130%;
+    width: 100%;
+    height: 300px;
 }
 
-.Info-Whatsapp {
-    text-align: right;
-    margin-right: 10%;
-    text-align: center;
-    font-family: 'RocaOne';
-    overflow: hidden;
+.div-imagen{
+    width: 30%;
+    height: 300px;
 }
 
 
-
-
-.infoInstaDetalles {
-    display: flex;
-    margin-left: 20px; 
-
-
+.imagenBloqueFooter{
+    width: 130%;
+    height: auto;
+    margin-left: -80px;
    
-    @media (max-width: 1000px) {
-          font-size: 80%;
-          margin-left: 30%;
-      }
 
 }
 
-.logoInsta {
-    width: 60px;
-    height: 60px;
-    margin-top: 15px;
+
+.div-texto{
+    display: flex;
+    margin-top: 5%;
+    font-size: 30px;
 }
 
-.InfoProgramacion {
-    display: flex; /* Utilizamos flexbox para organizar los elementos */
-    align-items: center; /* Alinea los elementos verticalmente */
-    justify-content: flex-start;
-    margin-top: -0.5%;
-    margin-left: 2%;
+
+
+.titulo-texto{
+    font-family: 'RocaOne';
+    color: #FF9540;
+
+}
+
+
+
+.div-central{
+    display: flex;
+    width: 100%;
+    height: 250px;
+}
+
+
+
+.div-instagram{
+    width: 30%;
+    height: auto;
+}
+
+
+
+.SeguinosEnInstagram{
+    font-size: 30px;
+    margin-left: 40px;
+    font-family: 'RocaOne';
+    color: #280B02;
+}
+
+
+
+
+.Instagram{
+        display: flex;
+        width: 100%;
+}
+
+
+.imgInstagram{
+    width: 30%;
+    height: auto;
+ }
+ 
+ 
+ .Usuario-Instagram{
+color: #280B02;
+margin-top: 10%;
+font-size: 30px;
+font-family: 'RocaOne';
+
+ }
+
+
+
 
  
-   
+ .div-imagenCentral{
+    display: flex;
+ }
+
+
+
+
+
+ .div-whatsapp{
+    width: 37%;
+    height: auto;
 }
 
-.InfoNumero {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-  /* Agrega la propiedad de transición para la animación de zoom */
-  transition: transform 0.3s ease-in-out;
+.whatsapp{
+    display: flex;
+    width: 70%;
+    margin-left: 20%;
 }
 
-/* Agrega la regla de transformación al pasar el mouse */
-.InfoNumero:hover {
-  /* Aplica un pequeño zoom al 105% al pasar el mouse */
-  transform: scale(1.05);
-}
-.Datos {
-    margin-right: 10px; /* Espacio entre el texto y la imagen */
-    font-size: 100%;
-    margin-top: 8%;
+
+.ComunicateConNosotros{
+    text-align: center;
     font-family: 'RocaOne';
+    color: #280B02;
+
 }
 
-.logoW {
-    width: 30px; /* Ajusta el ancho de la imagen según sea necesario */
-    height: auto; /* Para mantener la proporción */
-    margin-top:45%;
-    font-family: 'RocaOne';
+.logoWhatsapp{
+    width: 20%;
+    height: auto;
 }
 
 
-.numero{
-    margin-top:25%;
+.NumeroWhatsapp{
+    color: #280B02;
+    font-size:30px;
+    margin-top: 5%;
     font-family: 'RocaOne';
-    font-size: 110%;
+
+}
+
+
+
+
+.programacionDiseño{
+    margin-top: 50px;
+    color: #280B02;
+    font-family: 'RocaOne';
+
+
+}
+
+.infoProgramacion{
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+.logoProgramacionWhatsapp {
+    width: 30px;
+    max-height: 2em; /* Puedes ajustar esto según tus necesidades */
+    margin-top: 50px;
     
 }
 
+.NumeroJulian{
+ margin-top: 50px;       
+color: #280B02;
+font-family: 'RocaOne';
+
+}
 
 @font-face {
+   
+     
+    
     font-family: 'Arapey';
     src: url('../fonts/Arapey-Italic.ttf') format('truetype');
     font-weight: normal;
@@ -239,64 +184,3 @@ div {
     font-weight: normal;
     font-style: normal;
 }
-
-.InfoProgramacion, .InfoNumero{
-    @media (max-width: 1000px) {
-
-    
-    }
-}
-
-
-
-.Info-ig {
-  margin-left: -140px; /* Ajusta el valor según tus necesidades */
-  
-}
-
-
-.Info-whatsapp{
-  margin-right: 1%;
-}
-
-
-
-
-
-
-.imagenDelCentro{
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  height: auto;
-}
-
-a {
-  color: inherit; /* Para heredar el color del texto del contenedor padre */
-  text-decoration: none; /* Para quitar el subrayado */
-}
-
-.infoInstaDetalles {
-  display: flex;
-  transition: transform 0.3s ease-in-out; /* Agregamos una transición suave */
-}
-
-.infoInstaDetalles:hover {
-  transform: scale(1.05); /* Un poco de zoom al pasar el mouse */
-}
-
-@media (max-width: 1000px) {
-  .infoInstaDetalles {
-    font-size: 80%;
-    margin-left: 30%;
-  }
-}
-
-
-
-
-
-
-  
