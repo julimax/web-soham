@@ -492,6 +492,21 @@ body {
 
 }
 
+
+@media (min-width: 300px) and (max-width: 520px) {
+  .item6 h2 {
+   font-size: 90%;
+   margin-top: -10%;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 770px) {
+  .item6 h2 {
+   font-size: 90%;
+  }
+}
+
+
 .item6 h3{
     font-family: "Arapey";
     margin-top: 2%;
@@ -500,9 +515,29 @@ body {
 
 
 
+
+
+
+
 .logo-numero-whatsapp{
     display: flex;
     margin-left: 10px;
+}
+
+
+@media (min-width: 300px) and (max-width: 520px) {
+  .logo-numero-whatsapp{
+   font-size: 90%;
+   margin-top: -15%;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 770px) {
+  .logo-numero-whatsapp{
+   font-size: 90%;
+   margin-top: -2%;
+
+  }
 }
 
 
