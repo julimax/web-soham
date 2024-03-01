@@ -2,15 +2,18 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    height: auto;
 }
 
 .body::-webkit-scrollbar{
     width: 10px;
+    height: auto;
   }
   
   .body::-webkit-scrollbar-thumb{
     background: #373431;
     border-radius: 5px;
+    height: auto;
   
     
   }
@@ -27,6 +30,7 @@ body {
 
 .mainSohamDetalles {
     width: 100%;
+    height: auto;
     background-color: #1D0E05;
 
 }
@@ -45,11 +49,54 @@ body {
     display: flex;
     z-index: 2;
     width: 35%;
+    height: auto;
+
 }
 
 .bloque1AImagenes{
     display: flex;
 }
+
+
+
+/* Estilos generales que se aplican independientemente del tamaño de la pantalla */
+
+/* Estilos para dispositivos móviles (menos de 768px de ancho) */
+@media only screen and (max-width: 767px) {
+    .bloque1AImagenes{
+        margin-left: 50%;
+    }
+  }
+  
+  /* Estilos para tabletas (768px - 1023px de ancho) */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .bloque1AImagenes{
+        margin-left: 50%;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (1024px - 1279px de ancho) */
+  @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .bloque1AImagenes{
+        margin-left: 50%;
+    }
+  }
+  
+  /* Estilos para pantallas medianas (1280px - 1439px de ancho) */
+  @media only screen and (min-width: 1280px) and (max-width: 1439px) {
+    /* Estilos específicos para pantallas medianas */
+  }
+  
+  /* Estilos para pantallas grandes (1440px y más de ancho) */
+  @media only screen and (min-width: 1440px) {
+    /* Estilos específicos para pantallas grandes */
+  }
+  
+
+
+
+
+
 
 .sohamImagen1 {
     width: 70%;
@@ -75,6 +122,51 @@ body {
     font-family: 'RocaOne';
 }
 
+
+
+/* Estilos generales que se aplican independientemente del tamaño de la pantalla */
+
+/* Estilos para dispositivos móviles (menos de 768px de ancho) */
+@media only screen and (max-width: 767px) {
+    .bloque1ATexto{
+        margin-left: 5%;
+        font-size: 70%;
+        color: white;
+        text-align: center;
+        font-family: 'RocaOne';
+    }
+  }
+  
+  /* Estilos para tabletas (768px - 1023px de ancho) */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .bloque1ATexto{
+        margin-left: 5%;
+        font-size: 100%;
+        color: white;
+        text-align: center;
+        font-family: 'RocaOne';
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (1024px - 1279px de ancho) */
+  @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+   
+  }
+  
+  /* Estilos para pantallas medianas (1280px - 1439px de ancho) */
+  @media only screen and (min-width: 1280px) and (max-width: 1439px) {
+    /* Estilos específicos para pantallas medianas */
+  }
+  
+  /* Estilos para pantallas grandes (1440px y más de ancho) */
+  @media only screen and (min-width: 1440px) {
+    /* Estilos específicos para pantallas grandes */
+  }
+
+
+
+
+
 .sohamCircular {
     width: 110%;
     margin-left: -8%;
@@ -82,6 +174,30 @@ body {
     animation: aparecer 2s ease-in-out forwards;
     z-index: 2;
 }
+
+@media only screen and (max-width: 767px) {
+    .sohamCircular {
+        max-width: 200px; /* Establece un ancho máximo para la imagen */
+        margin-left: -2%;
+        height: auto; /* Establece la altura automática para mantener la proporción */
+        animation: aparecer 2s ease-in-out forwards;
+        z-index: 2;
+    }
+    
+  }
+  
+  /* Estilos para tabletas (768px - 1023px de ancho) */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .sohamCircular {
+        width: 110%;
+        margin-left: -8%;
+        height: auto;
+        animation: aparecer 2s ease-in-out forwards;
+        z-index: 2;
+    }
+  }
+
+
 
 @keyframes pop {
     0% {
@@ -116,12 +232,35 @@ body {
 .bloque2{
     display: flex;
     width: 100%;
-    height: 670px;
+    height: auto;
     background-image: url('../images/sohamBloque2.png');
     background-size: cover;
     background-position: right bottom; /* Ajusta la posición a la derecha y superior */
     background-origin: content-box;
+}/* Estilos para pantallas grandes */
+
+
+
+
+.bloque2 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-image: url('../images/sohamBloque2.png');
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+  background-position: right bottom; /* Posición de la imagen de fondo */
+  background-origin: content-box;
 }
+
+/* Media query para pantallas más pequeñas, donde se oculta el fondo PNG */
+@media only screen and (max-width: 767px) {
+  .bloque2 {
+      background-image: none; /* Oculta el fondo PNG */
+  }
+}
+
+
+
 
 .bloque2Texto1 {
     color: white;
@@ -131,6 +270,47 @@ body {
     font-size: 140%;
 }
 
+
+@media only screen and (max-width: 767px) {
+    .bloque2Texto1 {
+        color: white;
+        text-align: center;
+        font-family: 'RocaOne';
+        margin-right: 10%;
+        font-size: 70%;
+    }
+  }
+  
+  /* Estilos para tabletas (768px - 1023px de ancho) */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .bloque2Texto1 {
+        color: white;
+        text-align: center;
+        font-family: 'RocaOne';
+        margin-right: 10%;
+        font-size: 90%;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (1024px - 1279px de ancho) */
+  @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+   
+  }
+  
+  /* Estilos para pantallas medianas (1280px - 1439px de ancho) */
+  @media only screen and (min-width: 1280px) and (max-width: 1439px) {
+    /* Estilos específicos para pantallas medianas */
+  }
+  
+  /* Estilos para pantallas grandes (1440px y más de ancho) */
+  @media only screen and (min-width: 1440px) {
+    /* Estilos específicos para pantallas grandes */
+  }
+
+
+
+
+
 .bloque2Texto2 {
     color: white;
     text-align: center;
@@ -139,5 +319,48 @@ body {
     font-size: 140%;
 }
 
+@media only screen and (max-width: 767px) {
+  .bloque2Texto2 {
+    color: white;
+    text-align: center;
+    font-family: 'RocaOne';
+    margin-right: 10%;
+    font-size: 60%;
+}
+}
 
 
+@media only screen and (max-width: 767px) {
+    .bloque2{
+    display: block;
+    }
+}
+
+  
+  /* Estilos para tabletas (768px - 1023px de ancho) */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .bloque2{
+    
+    }
+    
+  }
+
+
+@media only screen and (max-width: 767px) {
+    .videoSoham {
+        width: 200px; /* Establece un ancho máximo para el video */
+        height: auto; /* Establece la altura automática para mantener la proporción */
+        margin-left: 30%;
+
+    }
+}
+
+  
+  /* Estilos para tabletas (768px - 1023px de ancho) */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .videoSoham{
+        width: 150px;
+        height: auto;
+    }
+    
+  }

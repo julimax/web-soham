@@ -1,296 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    margin: 0;
-    overflow: hidden; /* Evita la barra de desplazamiento */
+  background-color: #fad4af;
+}
 
+.container {
+  width: 100%;
+  height: 650px;
+  margin: 5px auto;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "n1 n2 n2"
+    "n3 n4 n5"
+    "n6 n6 n6";
+}
 
-    @media (max-width: 1000px) {
-        height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
-      }
-    
-      @media (max-width: 770px) {
-        height: 370px; 
-      }
-    
-      @media (max-width: 600px) {
-        height: 320px; 
-      }
+@media screen and (max-width: 1000px) {
+  .container {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    grid-template-areas:
+    "n1 n2 n2"
+    "n3 n4 n5"
+    "n6 n6 n6";
+  }
+}
+
+/* Media query para pantallas aún más pequeñas */
+@media screen and (max-width: 770px) {
+  .container {
+    grid-template-rows: repeat(5, 1fr);
+
+    grid-template-areas:
+      "n1 n2 n2"
+      "n3 n3 n3"
+      "n4 n4 n4"
+      "n5 n5 n5"
+      "n6 n6 n6";
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-rows: repeat(5, 1fr);
+
+    grid-template-areas:
+      "n1 n2 n2"
+      "n3 n3 n3"
+      "n4 n4 n4"
+      "n5 n5 n5"
+      "n6 n6 n6";
+  }
 }
 
 
 
 
 
-
-
-div {
-    margin: 0;
+.item1 {
+  background-color: #fad4af;
+  grid-area: n1;
 }
 
-.mainBloque5 {
-    width: 100%;
-    background-color: #fad4af;
-    display: block;
-    height: 100%;
-    @media (max-width: 1000px) {
-        height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
-      }
-  
-      @media (max-width: 770px) {
-        height: 370px; 
-      }
-    
-      @media (max-width: 600px) {
-        height: 320px; 
-      }
+.item2 {
+  background-color: #fad4af;
+  grid-area: n2;
 }
 
-.subMainBloque5 {
-    display: block;
-}
-
-.titulo-content {
-    display: flex;
-    align-items: center;
-    height: 60%;
-    width: 100%;
-    font-size: 200%;
-    color: #2F1714;
-    justify-content: space-between;
-
-    @media (max-width: 1200px) {
-        font-size: 150%;
-      }
-
-     @media (max-width: 1000px) {
-        font-size: 130%;
-      }
-    
-      @media (max-width: 850px) {
-        font-size: 110%;
-      }
-    
-      @media (max-width: 600px) {
-        font-size: 80%;
-      }
-
-      
-}
-.imagenB5 .imagenBloque5{
-    max-width: 600px;
-    height: auto;
-    margin-left: -13%;
-    margin-bottom: -5%;
-
-    @media (max-width: 1000px) {
-        max-width: 500px;
-      }
-  
-      @media (max-width: 770px) {
-        max-width: 400px;
-      }
-    
-      @media (max-width: 600px) {
-        max-width: 350px;
-      }
-
-      @media (max-width: 500px) {
-        max-width: 260px;
-      }
-}
-
-.titulo-texto {
-    margin-right: 400px;
-    width: 60%;
-    display: inline;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    font-size: 100%;
-    color: #FF9540;
-    margin-top: -150px;
-    margin-left: -20%;
-    text-align: center;
-    line-height: 1.4;
-    font-family: 'RocaOne';
-
-    @media (max-width: 1000px) {
-        font-size: 120%;
-        margin-left: -35%;
-      }
-    
-      @media (max-width: 770px) {
-        font-size: 80%;
-        margin-left: -30% !important;
-        margin-top: 1%;
-      }
-
-      @media (max-width: 600px) {
-        font-size: 110%;
-        margin-left: -30% !important;
-        margin-top: 1%;
-      }
-
-      @media (max-width: 500px) {
-        font-size: 80%;
-        margin-left: -30% !important;
-        margin-top: 1%;
-      }
-}
-
-.Info-Redes {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-left: 10%;
-    text-align: center;
-    font-family: 'RocaOne';
-    color: #2F1714;
-    margin-top: -3%;
-    font-size: 130%;
-}
-
-.Info-Whatsapp {
-    text-align: right;
-    margin-right: 10%;
-    text-align: center;
-    font-family: 'RocaOne';
-    overflow: hidden;
+.item2 h2 {
+  font-size: 3em; 
+  color: #ff9540;
+  font-family: "RocaOne";
+  max-width: 100%; 
+  width: auto; 
+  word-wrap: break-word; 
 }
 
 
-
-
-.infoInstaDetalles {
-    display: flex;
-    margin-left: 20px; 
-
-
-   
-    @media (max-width: 1000px) {
-          font-size: 80%;
-          margin-left: 30%;
-      }
-
+@media (max-width: 1250px) {
+  .item2 h2 {
+    font-size: 2em;
+  }
 }
 
-.logoInsta {
-    width: 60px;
-    height: 60px;
-    margin-top: 15px;
+@media (max-width: 770px) {
+  .item2 h2 {
+    font-size: 1.5em;
+  }
 }
 
-.InfoProgramacion {
-    display: flex; /* Utilizamos flexbox para organizar los elementos */
-    align-items: center; /* Alinea los elementos verticalmente */
-    justify-content: flex-start;
-    margin-top: -0.5%;
-    margin-left: 2%;
-
- 
-   
+@media (max-width: 600px) {
+  .item2 h2 {
+    font-size: 0.8em;
+  }
 }
 
-.InfoNumero {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-  /* Agrega la propiedad de transición para la animación de zoom */
-  transition: transform 0.3s ease-in-out;
+@media (max-width: 400px) {
+  .item2 h2 {
+    font-size: 0.7em;
+  }
 }
 
-/* Agrega la regla de transformación al pasar el mouse */
-.InfoNumero:hover {
-  /* Aplica un pequeño zoom al 105% al pasar el mouse */
-  transform: scale(1.05);
-}
-.Datos {
-    margin-right: 10px; /* Espacio entre el texto y la imagen */
-    font-size: 100%;
-    margin-top: 8%;
-    font-family: 'RocaOne';
-}
-
-.logoW {
-    width: 30px; /* Ajusta el ancho de la imagen según sea necesario */
-    height: auto; /* Para mantener la proporción */
-    margin-top:45%;
-    font-family: 'RocaOne';
-}
-
-
-.numero{
-    margin-top:25%;
-    font-family: 'RocaOne';
-    font-size: 110%;
-    
-}
-
-
-@font-face {
-    font-family: 'Arapey';
-    src: url('../fonts/Arapey-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'RocaOne';
-    src: url('../fonts/Roca\ Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.InfoProgramacion, .InfoNumero{
-    @media (max-width: 1000px) {
-
-    
-    }
-}
-
-
-
-.Info-ig {
-  margin-left: -140px; /* Ajusta el valor según tus necesidades */
-  
-}
-
-
-.Info-whatsapp{
-  margin-right: 1%;
+@media (max-width: 300px) {
+  .item2 h2 {
+    font-size: 0.7em;
+  }
 }
 
 
 
 
 
-
-.imagenDelCentro{
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  height: auto;
+.item3 {
+  background-color: #fad4af;
+  grid-area: n3;
+  display: block;
+  text-align: center;
 }
 
-a {
-  color: inherit; /* Para heredar el color del texto del contenedor padre */
-  text-decoration: none; /* Para quitar el subrayado */
+@media (min-width: 300px) and (max-width: 770px) {
+  .item3 {
+    display: inline-block; /* Otra opción: display: inline; */
+    width: 48%; /* O ajusta según tus necesidades para dejar espacio entre los elementos */
+    margin: 1%; /* Ajusta según tus necesidades para dejar espacio entre los elementos */
+  }
 }
 
-.infoInstaDetalles {
-  display: flex;
-  transition: transform 0.3s ease-in-out; /* Agregamos una transición suave */
+
+
+
+.item3 h2 {
+  font-size: 2em;
+  color: #ff9540;
+  font-family: "RocaOne";
+  max-width: 100%;
+  width: auto;
+  word-wrap: break-word;
+  margin-bottom: -10px; /* Ajusta el valor según tus necesidades */
 }
 
-.infoInstaDetalles:hover {
-  transform: scale(1.05); /* Un poco de zoom al pasar el mouse */
+
+
+@media (max-width: 1250px) {
+  .item3 h2 {
+    font-size: 2em;
+  }
 }
+
+
+@media (max-width: 1100px) {
+  .item3 h2 {
+    font-size: 1em;  }
+}
+
 
 @media (max-width: 1000px) {
-  .infoInstaDetalles {
-    font-size: 80%;
-    margin-left: 30%;
+  .item3 h2 {
+    font-size: 1em;  }
+}
+
+@media (max-width: 900px) {
+  .item3 h2 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 870px) {
+  .item3 h2 {
+    font-size: 1em;
+  }
+}
+
+
+
+@media (max-width: 770px) {
+  .item3 h2 {
+    font-size: 1.5em;
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .item3 h2 {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  .item3 h2 {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 300px) {
+  .item3 h2 {
+    font-size: 0.7em;
+  }
+}
+
+
+.item3-Flex {
+  display: flex;
+  margin-top: 30px;
+}
+
+
+@media (min-width: 300px) and (max-width: 770px) {
+  .item3-Flex {
+   margin-left: 30%;
+   margin-top: -20px;
+  }
+}
+
+
+
+
+.item3-Flex h3 {
+  font-size: 2em; /* Ajusta el valor según tus necesidades */
+  color: #280b02;
+  font-family: "RocaOne";
+  margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1250px) {
+  .item3 h3 {
+    font-size: 1.5em;
+        
+        margin-bottom: 5%;
+
+  }
+}
+
+
+
+
+@media (max-width: 1100px) {
+  .item3 h3 {
+    font-size: 1.5em;
+    margin-left: 1em;
+    margin-bottom: 5%;
+
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .item3 h3 {
+    font-size: 1em;
+    margin-left: 1em;
+    margin-bottom: 5%;
+
+  }
+}
+
+@media (max-width: 900px) {
+  .item3 h3 {
+    font-size: 1em;
+    margin-left: 1em;
+    margin-bottom: 5%;
+
+  }
+}
+
+@media (max-width: 870px) {
+  .item3 h3 {
+    font-size: 1em;
+    margin-left: 1em;
+    margin-bottom: 5%;
+
+  }
+}
+
+
+@media (max-width: 770px) {
+  .item3 h3 {
+    font-size: 1.5em;
+    margin-left: 0.5em;
+    margin-top: -12px;
+
+  }
+}
+
+@media (max-width: 600px) {
+  .item3 h3 {
+    font-size: 0.8em;
+    margin-left: 1em;
+    margin-top: 5px;
+
+  }
+}
+
+@media (max-width: 400px) {
+  .item3 h3 {
+    font-size: 0.7em;
+    margin-left: 1em;
+    margin-top: 5px;
+
+  }
+}
+
+@media (max-width: 300px) {
+  .item3 h3 {
+    font-size: 0.7em;
+    margin-left: 1em;
+    margin-bottom: 5%;
+
+  }
+}
+
+
+
+
+.item4 {
+  background-color: #fad4af;
+  grid-area: n4;
+}
+
+
+
+.item5 {
+  background-color: #fad4af;
+  grid-area: n5;
+  text-align: center;
+}
+
+@media (min-width: 300px) and (max-width: 770px) {
+  .item5 {
+    display: inline-block; /* Otra opción: display: inline; */
+    width: 48%; /* O ajusta según tus necesidades para dejar espacio entre los elementos */
+    margin: 1%; /* Ajusta según tus necesidades para dejar espacio entre los elementos */
+  }
+}
+
+
+
+
+
+.item5 h2{
+   
+        font-size: 2em;
+        color: #ff9540;
+        font-family: "RocaOne";
+        max-width: 100%;
+        width: auto;
+        word-wrap: break-word;
+        margin-bottom: -10px; /* Ajusta el valor según tus necesidades */
+      }
+
+
+
+
+
+      
+
+@media (max-width: 1250px) {
+  .item5 h2 {
+    font-size: 2em;
+  }
+}
+
+
+
+
+
+@media (max-width: 1100px) {
+  .item5 h2 {
+    font-size: 1em;
+    margin-top: 10%;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .item5 h2 {
+    font-size: 1em;
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 900px) {
+  .item5 h2 {
+    font-size: 1em;
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 870px) {
+  .item5 h2 {
+    font-size: 1em;
+    margin-top: 10%;
+  }
+  
+}
+
+@media (max-width: 770px) {
+  .item5 h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .item5 h2 {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  .item5 h2 {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 300px) {
+  .item5 h2 {
+    font-size: 0.7em;
+  }
+}
+
+
+      
+
+
+
+
+.item5-flex{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+
+@media (min-width: 300px) and (max-width: 770px) {
+  .item5-Flex {
+   margin-left: 30%;
+   margin-top: -20px;
   }
 }
 
@@ -299,4 +456,320 @@ a {
 
 
 
+
+
+.item5-Flex h3 {
+    font-size: 1em; /* Ajusta el valor según tus necesidades */
+    color: #280b02;
+    font-family: "RocaOne";
+    margin-top: 2%;
+  }
   
+  @media (min-width: 300px) and (max-width: 770px) {
+    .item5-Flex h3 {
+     margin-left: 10%;
+     margin-top: -20px;
+     white-space: nowrap; 
+    }
+  }
+
+
+
+
+
+
+.item6 {
+  background-color: #fad4af;
+  grid-area: n6;
+  display: flex;
+}
+
+
+
+.item6 h2{
+    font-family: "Arapey";
+    margin-top: 2%;
+
+}
+
+
+@media (min-width: 300px) and (max-width: 520px) {
+  .item6 h2 {
+   font-size: 90%;
+   margin-top: -10%;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 770px) {
+  .item6 h2 {
+   font-size: 90%;
+  }
+}
+
+
+.item6 h3{
+    font-family: "Arapey";
+    margin-top: 2%;
+
+}
+
+
+
+
+
+
+
+.logo-numero-whatsapp{
+    display: flex;
+    margin-left: 10px;
+}
+
+
+@media (min-width: 300px) and (max-width: 520px) {
+  .logo-numero-whatsapp{
+   font-size: 90%;
+   margin-top: -15%;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 770px) {
+  .logo-numero-whatsapp{
+   font-size: 90%;
+   margin-top: -2%;
+
+  }
+}
+
+
+.logo-numero-whatsapp h3{
+    font-family: "Arapey";
+    margin-top: 23%;
+    margin-left: 5px
+
+}
+
+
+.figuraSuperior {
+  width: 110%;
+  height: auto;
+  margin: auto;
+  margin-top: 5%;
+  margin-left: -15%; /* Ajusta el valor según tus necesidades */
+}
+
+.titulo-texto {
+  text-align: center;
+  color: #ff9540; /* Añadí un color de texto para asegurarme de que sea visible en el fondo oscuro */
+  margin-top: 10%;
+  font-family: "RocaOne";
+}
+
+
+
+
+
+
+.imagenCentroFooter {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 5%;
+}
+
+
+
+
+@media (max-width: 870px) {
+  .imagenCentroFooter {
+    width: 70%;
+    margin: 0 auto; /* Esto centra horizontalmente el elemento */
+    display: block; /* Asegura que el elemento sea un bloque */
+
+  }
+}
+
+
+@media (max-width: 770px) {
+  .imagenCentroFooter  {
+    width: 70%;
+    margin: 0 auto; /* Esto centra horizontalmente el elemento */
+    display: block; /* Asegura que el elemento sea un bloque */
+
+  }
+}
+
+@media (max-width: 600px) {
+  .imagenCentroFooter {
+    width: 60%;
+    margin: 0 auto; /* Esto centra horizontalmente el elemento */
+    display: block; /* Asegura que el elemento sea un bloque */
+
+  }
+}
+
+@media (max-width: 500px) {
+  .imagenCentroFooter {
+    width: 60%;
+    margin: 0 auto; /* Esto centra horizontalmente el elemento */
+    display: block; /* Asegura que el elemento sea un bloque */
+
+  }
+}
+
+@media (max-width: 400px) {
+  .imagenCentroFooter {
+    width: 60%;
+    margin: 0 auto; /* Esto centra horizontalmente el elemento */
+    display: block; /* Asegura que el elemento sea un bloque */
+
+  }
+}
+
+@media (max-width: 300px) {
+  .imagenCentroFooter {
+    width: 60%;
+    margin: 0 auto; /* Esto centra horizontalmente el elemento */
+    display: block; /* Asegura que el elemento sea un bloque */
+  }
+}
+
+
+
+
+
+
+
+.logo-instagram {
+  width: 15%;
+}
+
+
+@media (max-width: 1250px) {
+  .logo-instagram {
+    width: 10%;
+    height: auto;
+    margin-left: 1em;
+
+  }
+}
+
+
+
+
+@media (max-width: 1100px) {
+  .logo-instagram  {
+    width: 10%;
+    margin-left: 2em;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .logo-instagram  {
+    width: 10%;
+    margin-left: 2em;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo-instagram  {
+    width: 10%;
+    margin-left: 2em;
+  }
+}
+
+@media (max-width: 870px) {
+  .logo-instagram  {
+    width: 10%;
+    margin-left: 2em;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 770px) {
+  .logo-instagram  {
+    width: 10%;
+    margin-left: 13em;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-instagram  {
+    width: 10%;
+    margin-left: 10em;
+
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-instagram  {
+    width: 10%;
+    margin-left: 8em;
+
+  }
+}
+
+@media (max-width: 400px) {
+  .logo-instagram  {
+    width: 10%;
+    margin-left: 6em;
+
+  }
+}
+
+@media (max-width: 300px) {
+  .logo-instagram {
+    width: 10%;
+    margin-left: 2em;
+
+  }
+}
+
+
+
+
+
+.logo-whatsapp {
+    width: 10%;
+  }
+
+  @media (min-width: 300px) and (max-width: 770px) {
+    .logo-whatsapp {
+     margin-left: 150%;
+     margin-top: -20px;
+     white-space: nowrap; 
+    }
+  }
+
+
+
+
+  
+  
+  .fa-brands.fa-whatsapp {
+    font-size: 30px; /* Ajusta el valor según tus necesidades */
+    margin-top: 20px;
+}
+
+
+
+@font-face {
+  font-family: "Arapey";
+  src: url("../fonts/Arapey-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RocaOne";
+  src: url("../fonts/Roca\ Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
