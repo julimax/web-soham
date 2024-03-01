@@ -8,8 +8,6 @@
     width: 100%;
     height: auto;
     overflow-x: hidden;
-    overflow-y: hidden;
-
  }
 
  .navBar{
@@ -63,7 +61,7 @@
 
 /* Efecto hover */
 .Andrea:hover {
-    transform: scale(1.04); /* Escala ligeramente el elemento al 105% de su tamaño original */
+    transform: scale(1.02); /* Escala ligeramente el elemento al 105% de su tamaño original */
 }
 
 
@@ -98,7 +96,7 @@
 
 /* Efecto hover */
 .Bautista:hover {
-    transform: scale(1.04); /* Escala ligeramente el elemento al 105% de su tamaño original */
+    transform: scale(1.02); /* Escala ligeramente el elemento al 105% de su tamaño original */
 }
 
 
