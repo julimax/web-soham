@@ -1,109 +1,129 @@
-html {
-    background-color:  #280B02;
+ *{
     margin: 0;
     padding: 0;
-}
+    background-color: #280B02;
+ }
 
-body {
-    margin: 0;
-    padding: 0;
-}
+ body{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
+ }
 
-
-.navBar{
+ .navBar{
     width: 100%;
     height: 35px;
-    margin-top: 0%;
-}
+ }
 
-.mainQuienesSomos{
-    margin-top: 3%;
-}
-
-
-.textoBloque6 {
-    display: block; /* Cambia a bloque para asegurar la visualización */
-    margin-left: 35%;
-    color: #FAD4AF;
-    font-size: 50px;
-    font-family: 'RocaOne';
-    
-
-}
+ .contenedor{
+    width: 100%;
+    height: auto;
+    background-color: red;
+ }
 
 
-.divImagenes .ImgContenido {
+
+ .Titulo{
+    width: 100%;
+    height: auto;
     display: flex;
-    justify-content: space-around; /* Ajusta el espacio entre los elementos */
-    margin-top: 40px;
-}
+    justify-content: center;
+    align-items: center;
+ }
 
 
-.imgContainer {
-    text-align: center; /* Centra el contenido */
-    width: 35%; /* Ajusta el ancho */
-    margin-top: 2%;
-    margin-left: -10%; /* Ajusta el margen izquierdo para mover el contenido a la izquierda */
-}
 
-
-.imgContainer img {
-    width: 150%; /* Ajusta el ancho al 150% del contenedor */
-    height: auto; /* Mantiene la proporción original */
-    max-width: none; /* Elimina la restricción del ancho máximo */
-    max-height: none; /* Elimina la restricción de la altura máxima */
-    margin-left: -30%;
-    margin-top: -50px; 
-    opacity: 0; /* Configura la opacidad inicial en 0 */
-    animation: aparecer 2s ease forwards; /* Define la animación */
-}
-
-
-/* Define la animación de la burbuja */
-@keyframes aparecer {
-    0% {
-        opacity: 0; /* Opacidad inicial en 0 */
-        transform: scale(0); /* Escala inicial en 0 */
-    }
-    100% {
-        opacity: 1; /* Opacidad final en 1 */
-        transform: scale(1); /* Escala final en 1 */
-    }
-}
-
-.imgContainer .imgAn {
-    margin-left: 10px; /* Ajusta el margen izquierdo para mover la imagen a la izquierda */
-}
-
-
-.NombreAn {
+ .Titulo h2{
+    font-family: 'Arapey';
     color: #FAD4AF;
-    font-family: 'RocaOne';
-    font-size: 16px; /* Ajusta el tamaño del texto */
-    margin-bottom: 10px; /* Espacio entre la imagen y el nombre */
-    margin-left: 260px; /* Mueve el elemento a la derecha */
-    text-decoration: none !important; /* Quita el subrayado */
+    font-size: 60px;
+    margin: 10px;
+    padding: 10px;
 }
 
 
-.NombreBau {
+
+
+.contenedorGeneral{
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+}
+
+
+.Andrea {
+    display: block;
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease; /* Transición suave durante 0.3 segundos */
+}
+
+/* Efecto hover */
+.Andrea:hover {
+    transform: scale(1.04); /* Escala ligeramente el elemento al 105% de su tamaño original */
+}
+
+
+.Andrea a{
+    text-decoration: none;
+}
+
+
+.imagenAndrea{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.Andrea h2{
+    font-family: 'Arapey';
     color: #FAD4AF;
-    font-family: 'RocaOne';
-    font-size: 16px; /* Ajusta el tamaño del texto */
-    margin-bottom: 10px; /* Espacio entre la imagen y el nombre */
-    margin-right: 50px;
+    text-align: center;
+
 }
 
 
-a {
-    color: inherit; /* Para heredar el color del texto del contenedor padre */
-    text-decoration: none; /* Para quitar el subrayado */
-  }
-  
 
 
-@font-face {
+.Bautista {
+    display: block;
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease; /* Transición suave durante 0.3 segundos */
+}
+
+/* Efecto hover */
+.Bautista:hover {
+    transform: scale(1.04); /* Escala ligeramente el elemento al 105% de su tamaño original */
+}
+
+
+.Bautista a{
+    text-decoration: none;
+}
+
+
+.imagenBautista{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Bautista h2{
+    font-family: 'Arapey';
+    color: #FAD4AF;
+    text-align: center;
+
+}
+
+
+ @font-face {
     font-family: 'Arapey';
     src: url('../fonts/Arapey-Italic.ttf') format('truetype');
     font-weight: normal;
@@ -117,4 +137,81 @@ a {
     font-style: normal;
 }
 
+
+
+
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .Titulo h2{
+       
+        font-size: 30px;
+       
+    }
+
+    .contenedorGeneral{
+        display: block;
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .Andrea {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease; /* Transición suave durante 0.3 segundos */
+    }
+
+    .imagenAndrea{
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .Andrea h2{
+        font-family: 'Arapey';
+        color: #FAD4AF;
+        text-align: center;
+    
+    }
+
+
+    .Bautista {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease; /* Transición suave durante 0.3 segundos */
+        margin-top: 20%;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    .contenedorGeneral{
+        display: block;
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .Andrea {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease; /* Transición suave durante 0.3 segundos */
+    }
+    
+
+
+    .Bautista {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease; /* Transición suave durante 0.3 segundos */
+        margin-top: 10%;
+    }
+}
 
