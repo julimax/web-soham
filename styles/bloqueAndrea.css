@@ -4,110 +4,133 @@ body {
     background-color: #280B02;
 }
 
-/* Animación para la imagen */
-@keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-
-.navBar{
+.navBar {
     width: 100%;
     height: 35px;
     margin-top: 0%;
     z-index: 100;
 }
 
-.mainAndrea {
-    display: flex; /* Utilizamos flexbox para organizar los bloques */
+.main {
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
-.divFotoAdrea {
-    width: 40%; /* Ocupa el 40% del ancho */
-    box-sizing: border-box; /* Para incluir padding y bordes en el ancho */
+.imagenAndrea {
+    width: 40%;
+    height: auto; /* Cambiado a auto para que la imagen se ajuste proporcionalmente */
 }
 
-.divFotoAdrea .ImagenDeAndrea {
-    width: 220%; /* La imagen ocupa todo el ancho del contenedor */
-    height: auto;
-    animation: slideIn 1.8s forwards; /* Animación de izquierda a derecha */
-    margin-top: -1.5%;
+.imagenAndrea img {
+    width: 240%; /* Cambiado a 100% para que la imagen se ajuste al contenedor */
 }
 
-.Div-Informacion {
-    width: 60%; /* Ocupa el 60% del ancho */
-    box-sizing: border-box; /* Para incluir padding y bordes en el ancho */
-    display: flex; /* Utilizamos flexbox */
-    flex-direction: column; /* Columnas para el diseño */
-    justify-content: space-between; /* Espacio uniforme entre elementos */
-    padding: 20px; /* Añadimos un poco de relleno para separar del borde */
+.titulo-texto {
+    width: 60%;
+    height: auto; /* Cambiado a auto para que se ajuste al contenido */
+    display: block;
 }
 
-/* Animación para el nombre */
-@keyframes slideDown {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.Titulo-Nombre {
+.titulo {
+    width: 100%;
+    height: auto; /* Cambiado a auto para que se ajuste al contenido */
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arapey';
     color: #EBBB8D;
-    margin-left: 25%;
-    font-size: 220%;
-    font-family: 'RocaOne';
-    margin-top: -2%;
-    animation: slideDown 1.5s forwards; /* Animación de arriba hacia abajo */
+    font-size: 30px;
 }
 
-/* Animación para el texto */
-.texto {
-    color: white;
-    font-size: 110%;
-    line-height: 1.6; /* Espaciado entre líneas para mejorar legibilidad */
-    margin-top:3%;
-    margin-left: -7%;
+.parrafo {
+    width: 100%;
     font-family: 'Arapey';
-    animation: slideLeft 2s forwards; /* Nueva animación para el párrafo */
-
+    color: #ffffff;
+    margin: 0;
 }
 
-/* Animación para el párrafo */
+.parrafo .texto {
+    font-size: 120%;
+    margin-top:  -5%;
+}
 
+/* Media Queries */
 
-@keyframes slideLeft {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    
+    .navBar {
+        width: 100%;
     }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
+
+    
+
+    .main {
+        flex-direction: column; /* Cambiado a columna para dispositivos móviles */
+        width: 100%; /* Ajustar al 100% del ancho de la página */
+    }
+
+    .imagenAndrea,
+    .titulo-texto {
+        width: 100%; /* Cambiado a 100% para que ocupen toda la pantalla */
     }
 }
 
-@font-face {
-    font-family: 'Arapey';
-    src: url('../fonts/Arapey-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+/* Estilos para tablets */
+@media only screen and (min-width: 601px) and (max-width: 890px) {
+    .titulo {
+        font-size: 20px; /* Reducir el tamaño de la fuente para tabletas */
+    }
+
+
+    .navBar {
+        width: 100%;
+    }
+
+    
+
+    
+
+    .imagenAndrea,
+    .titulo-texto {
+        width: 100%; /* Cambiado a 100% para que ocupen toda la pantalla */
+    }
+    .parrafo .texto {
+        font-size: 100%;
+        margin-top:  -7%;
+        font-size: 90%;
+    }
+    
 }
 
-@font-face {
-    font-family: 'RocaOne';
-    src: url('../fonts/Roca\ Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+
+
+/* Estilos para tablets */
+@media only screen and (min-width: 891px) {
+    .titulo {
+        font-size: 24px; /* Reducir el tamaño de la fuente para tabletas */
+    }
+
+
+    .navBar {
+        width: 100%;
+    }
+
+    
+
+    
+
+    .imagenAndrea,
+    .titulo-texto {
+        width: 100%; /* Cambiado a 100% para que ocupen toda la pantalla */
+    }
+    .parrafo .texto {
+        margin-top:  -5%;
+    }
+    
 }
 
 
