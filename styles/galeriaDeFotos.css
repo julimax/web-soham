@@ -49,6 +49,7 @@ html {
   margin-left: 5%;
   top: 15%;
   animation: aparecerDesdeIzquierda 1.5s ease-in-out forwards; /* Inicia la animación */
+  position: fixed;
 }
 .imagen1 {
   width: 35%;
