@@ -232,6 +232,60 @@ font-size: 40px;
 
 
 
+  @media screen and (min-width: 800px) and (max-width: 1300px) {
+   .top{
+    display: flex;
+   }
+   
+    .titulo-top .titulo {
+      font-size:190%;
+      text-align: center;
+      justify-content: center;
+  
+    }
+  
+    .imagen-superior{
+      width: 50%;
+      height: auto;
+    }
+    
+  
+
+    .datosInstagram{
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+    .usuarioIg{
+      font-size: 20px;
+    }
+
+
+    .datosWhatsapp{
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+    .usuariowp{
+      font-size: 20px;
+    }
+
+    .medio{
+      margin-top: 5%;
+  }
+  
+  }
+
+  .imagenCentral {
+      width: 400px; /* Ancho deseado de la imagen */
+      height: auto;
+  }
+
+  
   
 
   
