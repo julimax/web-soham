@@ -1,136 +1,117 @@
 body {
-    margin: 0;
-    overflow: hidden; /* Evita la barra de desplazamiento */
-    background-color: #280B02;
+  margin: 0;
+  background-color: #280b02;
+  overflow-x: hidden;
 }
 
 .navBar {
-    width: 100%;
-    height: 35px;
-    margin-top: 0%;
-    z-index: 100;
+  width: 100%;
+  height: 35px;
+  margin-top: 0%;
+  z-index: 100;
 }
 
 .main {
-    display: flex;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .imagenAndrea {
-    width: 40%;
-    height: auto; /* Cambiado a auto para que la imagen se ajuste proporcionalmente */
+  width: 40%;
+  height: auto; /* Cambiado a auto para que la imagen se ajuste proporcionalmente */
 }
 
 .imagenAndrea img {
-    width: 240%; /* Cambiado a 100% para que la imagen se ajuste al contenedor */
+  width: 240%; /* Cambiado a 100% para que la imagen se ajuste al contenedor */
 }
 
 .titulo-texto {
-    width: 60%;
-    height: auto; /* Cambiado a auto para que se ajuste al contenido */
-    display: block;
+  width: 60%;
+  height: auto; /* Cambiado a auto para que se ajuste al contenido */
+  display: block;
 }
 
 .titulo {
-    width: 100%;
-    height: auto; /* Cambiado a auto para que se ajuste al contenido */
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Arapey';
-    color: #EBBB8D;
-    font-size: 30px;
+  width: 100%;
+  height: auto; /* Cambiado a auto para que se ajuste al contenido */
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arapey";
+  color: #ebbb8d;
+  font-size: 30px;
 }
 
 .parrafo {
-    width: 100%;
-    font-family: 'Arapey';
-    color: #ffffff;
-    margin: 0;
+  width: 100%;
+  font-family: "Arapey";
+  color: #ffffff;
+  margin: 0;
 }
 
 .parrafo .texto {
-    font-size: 120%;
-    margin-top:  -5%;
+  font-size: 120%;
+  margin-top: -5%;
 }
 
 /* Media Queries */
 
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
-    
-    .navBar {
-        width: 100%;
-    }
+  .navBar {
+    width: 100%;
+  }
 
-    
+  .main {
+    flex-direction: column; /* Cambiado a columna para dispositivos móviles */
+    width: 100%; /* Ajustar al 100% del ancho de la página */
+  }
 
-    .main {
-        flex-direction: column; /* Cambiado a columna para dispositivos móviles */
-        width: 100%; /* Ajustar al 100% del ancho de la página */
-    }
-
-    .imagenAndrea,
-    .titulo-texto {
-        width: 100%; /* Cambiado a 100% para que ocupen toda la pantalla */
-    }
+  .imagenAndrea,
+  .titulo-texto {
+    width: 100%; /* Cambiado a 100% para que ocupen toda la pantalla */
+  }
 }
 
 /* Estilos para tablets */
 @media only screen and (min-width: 601px) and (max-width: 890px) {
-    .titulo {
-        font-size: 20px; /* Reducir el tamaño de la fuente para tabletas */
-    }
+  .titulo {
+    font-size: 20px; /* Reducir el tamaño de la fuente para tabletas */
+  }
 
+  .navBar {
+    width: 100%;
+  }
 
-    .navBar {
-        width: 100%;
-    }
-
-    
-
-    
-
-    .imagenAndrea,
-    .titulo-texto {
-        width: 100%; /* Cambiado a 100% para que ocupen toda la pantalla */
-    }
-    .parrafo .texto {
-        font-size: 100%;
-        margin-top:  -7%;
-        font-size: 90%;
-    }
-    
+  .imagenAndrea,
+  .titulo-texto {
+    width: 100%; /* Cambiado a 100% para que ocupen toda la pantalla */
+  }
+  .parrafo .texto {
+    font-size: 100%;
+    margin-top: -7%;
+    font-size: 90%;
+  }
 }
-
-
 
 /* Estilos para tablets */
 @media only screen and (min-width: 891px) {
-    .titulo {
-        font-size: 24px; /* Reducir el tamaño de la fuente para tabletas */
-    }
+  .titulo {
+    font-size: 24px; /* Reducir el tamaño de la fuente para tabletas */
+  }
 
+  .navBar {
+    width: 100%;
+  }
 
-    .navBar {
-        width: 100%;
-    }
-
-    
-
-    
-
-    .imagenAndrea,
-    .titulo-texto {
-        width: 100%; /* Cambiado a 100% para que ocupen toda la pantalla */
-    }
-    .parrafo .texto {
-        margin-top:  -5%;
-    }
-    
+  .imagenAndrea,
+  .titulo-texto {
+    width: 100%; /* Cambiado a 100% para que ocupen toda la pantalla */
+  }
+  .parrafo .texto {
+    margin-top: -5%;
+  }
 }
-
-

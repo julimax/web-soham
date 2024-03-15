@@ -1,121 +1,165 @@
 /* general */ 
 
 body{
-    background-color: #FAD4AF;
-    margin: 0;
-    padding: 0;
+  background-color: #fad4af;
+  margin: 0;
+  padding: 0;
 }
 
-.navBar{
-    position: fixed;
-    width: 100%;
-    height: 35px;
+.nav{
+background-color: #fad4af6c;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+height: 45px;
+position: absolute; /* Cambiamos a posición absoluta */
+z-index: 2; /* Ajustamos el índice z para que esté por encima */
+width: 100%; 
+}
+
+.main {
+position: relative; /* Cambiamos a posición relativa */
+}
+
+.nav .logo{
+cursor: pointer;
+margin-right: auto;
+}
+
+.nav .logo img{
+height: 30px;
+width: auto;
+}
+
+
+
+.nav .nav-links{
+list-style: none;
+font-family: "RocaOne";
+
+}
+
+
+
+.nav .nav-links li{
+display: inline-block;
+padding: 0 20px;    
+}
+
+
+
+.nav .nav-links a {
+font-size: 700;
+color: #eceff1; /* Color inicial del texto */
+text-decoration: none; /* Quitamos subrayado de los enlaces */
+transition: all 0.5s;
+}
+
+.nav .nav-links a:hover {
+color: #000; /* Color del texto al pasar el mouse (negro en este caso) */
+
+}
+
+
+
+/**/.menu {
+display:none;
+}
+
+.nav .btn button,
+/**/.nav .menu button{
+margin-left: 20px;
+font-weight: 700;
+color: #ffffff;
+padding: 9px 25px;
+background: #000000;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+transition: all 0.3s ease 0s;
+}
+
+
+
+/**/@media screen and (max-width: 800px){
+.nav-links, .btn {
+    display: none;
+}
+.menu {
+    display: inherit;
+}
+}
+
+
+
+/*Nav Mobile*/
+
+.nav a{
+text-decoration: none;  
+/*borramos el que teniamos en .header .nav-links a*/ 
+}
+
+.nav .overlay {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+background-color: #fad4afe1;
+overflow: hidden;
+transition: all 0.3s ease 0s;
+font-family: "RocaOne";
+}
+
+.nav .overlay .overlay-content{
+display: flex;
+height: 100%;
+flex-direction: column;
+align-items: center;
+justify-content: center;    
+}
+
+.nav .overlay a{
+padding: 15px;
+font-size: 36px;
+display: block;
+transition: all 0.3s ease 0s;
+font-weight: 700;
+color: #000000;
+}
+
+.nav .overlay a:hover, 
+.nav .overlay a:focus{
+color: #a97c0a;
+}
+
+.nav .overlay .close{
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 65px;
+}
+
+@media screen and (max-height:450px) {
+.nav .overlay a{
+    font-size: 20px;
+}
+.nav .overlay .close{
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}
 }
 
 /* bloque home */ 
 
 .homePage {
-    width: 100%;
-    height: 670px;
-    overflow: hidden; 
+  width: 100%;
+  height: 670px;
+  overflow: hidden; 
 
-    @media (max-width: 1000px) {
-        height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
-      }
-
-      @media (max-width: 770px) {
-        height: 370px; 
-      }
-    
-      @media (max-width: 600px) {
-        height: 320px; 
-      }
-}
-
-/* bloque soham */ 
-
-.bloqueSoham {
-    width: 100%;
-    height: 660px;
-    @media (max-width: 1000px) {
-        height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
-      }
-
-      @media (max-width: 770px) {
-        height: 370px; 
-      }
-    
-      @media (max-width: 600px) {
-        height: 320px; 
-      }
-}
-
-.divSoham {
-    height: 660px;
-    @media (max-width: 1000px) {
-        height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
-      }
-
-      @media (max-width: 770px) {
-        height: 370px; 
-      }
-    
-      @media (max-width: 600px) {
-        height: 320px; 
-      }
-}
-
-/* bloque clases */ 
-  
-.divClases {
-    height: 660px;
-    @media (max-width: 1000px) {
-        height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
-      }
-
-      @media (max-width: 770px) {
-        height: 370px; 
-      }
-    
-      @media (max-width: 600px) {
-        height: 320px; 
-      }
-}
-
-.bloqueClases {
-    width: 100%;
-    height: 660px;
-    @media (max-width: 1000px) {
-        height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
-      }
-
-      @media (max-width: 770px) {
-        height: 370px; 
-      }
-    
-      @media (max-width: 600px) {
-        height: 320px; 
-      }
-}
-
-/* bloque4 */ 
-
-.clasesPresenciales{
-    width: 100%;
-    height: 660px;
-}
-
-.divClasesPresenciales {
-    width: 100%;
-    height: 660px;
-}
-
-
-.divFooter{
-    width: 100%;
-    height: 660px;
-
-    @media (max-width: 1000px) {
+  @media (max-width: 1000px) {
       height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
     }
 
@@ -128,31 +172,152 @@ body{
     }
 }
 
+/* bloque soham */ 
+
+.bloqueSoham {
+  width: 100%;
+  height: 660px;
+  @media (max-width: 1000px) {
+      height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
+    }
+
+    @media (max-width: 770px) {
+      height: 370px; 
+    }
+  
+    @media (max-width: 600px) {
+      height: 320px; 
+    }
+}
+
+.divSoham {
+  height: 660px;
+  @media (max-width: 1000px) {
+      height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
+    }
+
+    @media (max-width: 770px) {
+      height: 370px; 
+    }
+  
+    @media (max-width: 600px) {
+      height: 320px; 
+    }
+}
+
+/* bloque clases */ 
+
+.divClases {
+  height: 660px;
+  @media (max-width: 1000px) {
+      height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
+    }
+
+    @media (max-width: 770px) {
+      height: 370px; 
+    }
+  
+    @media (max-width: 600px) {
+      height: 320px; 
+    }
+}
+
+.bloqueClases {
+  width: 100%;
+  height: 660px;
+  @media (max-width: 1000px) {
+      height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
+    }
+
+    @media (max-width: 770px) {
+      height: 370px; 
+    }
+  
+    @media (max-width: 600px) {
+      height: 320px; 
+    }
+}
+
+/* bloque4 */ 
+
+.clasesPresenciales{
+  width: 100%;
+  height: 660px;
+}
+
+.divClasesPresenciales {
+  width: 100%;
+  height: 660px;
+}
+
+
+.divFooter{
+  width: 100%;
+  height: 660px;
+
+  @media (max-width: 1000px) {
+    height: 570px; /* Nuevo valor de altura para pantallas más pequeñas */
+  }
+
+  @media (max-width: 770px) {
+    height: 370px; 
+  }
+
+  @media (max-width: 600px) {
+    height: 320px; 
+  }
+}
+
 
 
 
 .footerIframe{
-    width: 100%;
-    height: 660px;
-    
-   
+  width: 100%;
+  height: 660px;
+  
+ 
 }
 
 
- .clasesVirtualesIframe{
-  width: 100%;
-  height: 2050px;
+.clasesVirtualesIframe{
+width: 100%;
+height: 2050px;
 }
 
 
 
 
 .contenedor::-webkit-scrollbar{
-  width: 10px;
+width: 10px;
 }
 
 .contenedor::-webkit-scrollbar-thumb{
-  background: #373431;
-  border-radius: 5px;
+background: #373431;
+border-radius: 5px;
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+font-family: "RocaOne";
+src: url("../fonts/Roca\ Italic.ttf") format("truetype"); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "Arapey";
+src: url("../fonts/Arapey-Italic.ttf") format("truetype"); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+font-weight: normal;
+font-style: normal;
 }

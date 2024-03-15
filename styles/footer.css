@@ -1,775 +1,308 @@
-* {
-  margin: 0;
+*{
   padding: 0;
+  margin: 0;
 }
 
-body {
-  background-color: #fad4af;
+body{
+  background-color: #FAD4AF;
 }
 
-.container {
-  width: 100%;
-  height: 650px;
-  margin: 5px auto;
-  gap: 5px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas:
-    "n1 n2 n2"
-    "n3 n4 n5"
-    "n6 n6 n6";
-}
-
-@media screen and (max-width: 1000px) {
-  .container {
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-
-    grid-template-areas:
-    "n1 n2 n2"
-    "n3 n4 n5"
-    "n6 n6 n6";
-  }
-}
-
-/* Media query para pantallas aún más pequeñas */
-@media screen and (max-width: 770px) {
-  .container {
-    grid-template-rows: repeat(5, 1fr);
-
-    grid-template-areas:
-      "n1 n2 n2"
-      "n3 n3 n3"
-      "n4 n4 n4"
-      "n5 n5 n5"
-      "n6 n6 n6";
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    grid-template-rows: repeat(5, 1fr);
-
-    grid-template-areas:
-      "n1 n2 n2"
-      "n3 n3 n3"
-      "n4 n4 n4"
-      "n5 n5 n5"
-      "n6 n6 n6";
-  }
-}
-
-
-
-
-
-.item1 {
-  background-color: #fad4af;
-  grid-area: n1;
-}
-
-.item2 {
-  background-color: #fad4af;
-  grid-area: n2;
-}
-
-.item2 h2 {
-  font-size: 3em; 
-  color: #ff9540;
-  font-family: "RocaOne";
-  max-width: 100%; 
-  width: auto; 
-  word-wrap: break-word; 
-}
-
-
-@media (max-width: 1250px) {
-  .item2 h2 {
-    font-size: 2em;
-  }
-}
-
-@media (max-width: 770px) {
-  .item2 h2 {
-    font-size: 1.5em;
-  }
-}
-
-@media (max-width: 600px) {
-  .item2 h2 {
-    font-size: 0.8em;
-  }
-}
-
-@media (max-width: 400px) {
-  .item2 h2 {
-    font-size: 0.7em;
-  }
-}
-
-@media (max-width: 300px) {
-  .item2 h2 {
-    font-size: 0.7em;
-  }
-}
-
-
-
-
-
-.item3 {
-  background-color: #fad4af;
-  grid-area: n3;
+.main{
   display: block;
-  text-align: center;
-}
-
-@media (min-width: 300px) and (max-width: 770px) {
-  .item3 {
-    display: inline-block; /* Otra opción: display: inline; */
-    width: 48%; /* O ajusta según tus necesidades para dejar espacio entre los elementos */
-    margin: 1%; /* Ajusta según tus necesidades para dejar espacio entre los elementos */
-  }
+ 
 }
 
 
-
-
-.item3 h2 {
-  font-size: 2em;
-  color: #ff9540;
-  font-family: "RocaOne";
-  max-width: 100%;
-  width: auto;
-  word-wrap: break-word;
-  margin-bottom: -10px; /* Ajusta el valor según tus necesidades */
-}
-
-
-
-@media (max-width: 1250px) {
-  .item3 h2 {
-    font-size: 2em;
-  }
-}
-
-
-@media (max-width: 1100px) {
-  .item3 h2 {
-    font-size: 1em;  }
-}
-
-
-@media (max-width: 1000px) {
-  .item3 h2 {
-    font-size: 1em;  }
-}
-
-@media (max-width: 900px) {
-  .item3 h2 {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 870px) {
-  .item3 h2 {
-    font-size: 1em;
-  }
-}
-
-
-
-@media (max-width: 770px) {
-  .item3 h2 {
-    font-size: 1.5em;
-    margin-top: 10%;
-  }
-}
-
-@media (max-width: 600px) {
-  .item3 h2 {
-    font-size: 0.8em;
-  }
-}
-
-@media (max-width: 400px) {
-  .item3 h2 {
-    font-size: 0.7em;
-  }
-}
-
-@media (max-width: 300px) {
-  .item3 h2 {
-    font-size: 0.7em;
-  }
-}
-
-
-.item3-Flex {
+.top{
   display: flex;
-  margin-top: 30px;
-}
-
-
-@media (min-width: 300px) and (max-width: 770px) {
-  .item3-Flex {
-   margin-left: 30%;
-   margin-top: -20px;
-  }
-}
-
-
-
-
-.item3-Flex h3 {
-  font-size: 2em; /* Ajusta el valor según tus necesidades */
-  color: #280b02;
-  font-family: "RocaOne";
-  margin-top: 5%;
-}
-
-
-
-
-
-
-
-
-@media (max-width: 1250px) {
-  .item3 h3 {
-    font-size: 1.5em;
-        
-        margin-bottom: 5%;
-
-  }
-}
-
-
-
-
-@media (max-width: 1100px) {
-  .item3 h3 {
-    font-size: 1.5em;
-    margin-left: 1em;
-    margin-bottom: 5%;
-
-  }
-}
-
-
-@media (max-width: 1000px) {
-  .item3 h3 {
-    font-size: 1em;
-    margin-left: 1em;
-    margin-bottom: 5%;
-
-  }
-}
-
-@media (max-width: 900px) {
-  .item3 h3 {
-    font-size: 1em;
-    margin-left: 1em;
-    margin-bottom: 5%;
-
-  }
-}
-
-@media (max-width: 870px) {
-  .item3 h3 {
-    font-size: 1em;
-    margin-left: 1em;
-    margin-bottom: 5%;
-
-  }
-}
-
-
-@media (max-width: 770px) {
-  .item3 h3 {
-    font-size: 1.5em;
-    margin-left: 0.5em;
-    margin-top: -12px;
-
-  }
-}
-
-@media (max-width: 600px) {
-  .item3 h3 {
-    font-size: 0.8em;
-    margin-left: 1em;
-    margin-top: 5px;
-
-  }
-}
-
-@media (max-width: 400px) {
-  .item3 h3 {
-    font-size: 0.7em;
-    margin-left: 1em;
-    margin-top: 5px;
-
-  }
-}
-
-@media (max-width: 300px) {
-  .item3 h3 {
-    font-size: 0.7em;
-    margin-left: 1em;
-    margin-bottom: 5%;
-
-  }
-}
-
-
-
-
-.item4 {
-  background-color: #fad4af;
-  grid-area: n4;
-}
-
-
-
-.item5 {
-  background-color: #fad4af;
-  grid-area: n5;
-  text-align: center;
-}
-
-@media (min-width: 300px) and (max-width: 770px) {
-  .item5 {
-    display: inline-block; /* Otra opción: display: inline; */
-    width: 48%; /* O ajusta según tus necesidades para dejar espacio entre los elementos */
-    margin: 1%; /* Ajusta según tus necesidades para dejar espacio entre los elementos */
-  }
-}
-
-
-
-
-
-.item5 h2{
-   
-        font-size: 2em;
-        color: #ff9540;
-        font-family: "RocaOne";
-        max-width: 100%;
-        width: auto;
-        word-wrap: break-word;
-        margin-bottom: -10px; /* Ajusta el valor según tus necesidades */
-      }
-
-
-
-
-
-      
-
-@media (max-width: 1250px) {
-  .item5 h2 {
-    font-size: 2em;
-  }
-}
-
-
-
-
-
-@media (max-width: 1100px) {
-  .item5 h2 {
-    font-size: 1em;
-    margin-top: 10%;
-  }
-}
-
-
-@media (max-width: 1000px) {
-  .item5 h2 {
-    font-size: 1em;
-    margin-top: 10%;
-  }
-}
-
-@media (max-width: 900px) {
-  .item5 h2 {
-    font-size: 1em;
-    margin-top: 10%;
-  }
-}
-
-@media (max-width: 870px) {
-  .item5 h2 {
-    font-size: 1em;
-    margin-top: 10%;
-  }
   
 }
 
-@media (max-width: 770px) {
-  .item5 h2 {
-    font-size: 1.5em;
-  }
-}
 
-@media (max-width: 600px) {
-  .item5 h2 {
-    font-size: 0.8em;
-  }
-}
-
-@media (max-width: 400px) {
-  .item5 h2 {
-    font-size: 0.7em;
-  }
-}
-
-@media (max-width: 300px) {
-  .item5 h2 {
-    font-size: 0.7em;
-  }
-}
-
-
-      
-
-
-
-
-.item5-flex{
-    display: flex;
-    margin-top: 30px;
-    justify-content: center;
-}
-
-
-@media (min-width: 300px) and (max-width: 770px) {
-  .item5-Flex {
-   margin-left: 30%;
-   margin-top: -20px;
-  }
-}
-
-
-
-
-
-
-
-
-.item5-Flex h3 {
-    font-size: 1em; /* Ajusta el valor según tus necesidades */
-    color: #280b02;
-    font-family: "RocaOne";
-    margin-top: 2%;
-  }
-  
-  @media (min-width: 300px) and (max-width: 770px) {
-    .item5-Flex h3 {
-     margin-left: 10%;
-     margin-top: -20px;
-     white-space: nowrap; 
-    }
-  }
-
-
-
-
-
-
-.item6 {
-  background-color: #fad4af;
-  grid-area: n6;
-  display: flex;
-}
-
-
-
-.item6 h2{
-    font-family: "Arapey";
-    margin-top: 2%;
-
-}
-
-
-@media (min-width: 300px) and (max-width: 520px) {
-  .item6 h2 {
-   font-size: 90%;
-   margin-top: -10%;
-  }
-}
-
-@media (min-width: 520px) and (max-width: 770px) {
-  .item6 h2 {
-   font-size: 90%;
-  }
-}
-
-
-.item6 h3{
-    font-family: "Arapey";
-    margin-top: 2%;
-
-}
-
-
-
-
-
-
-
-.logo-numero-whatsapp{
-    display: flex;
-    margin-left: 10px;
-}
-
-
-@media (min-width: 300px) and (max-width: 520px) {
-  .logo-numero-whatsapp{
-   font-size: 90%;
-   margin-top: -15%;
-  }
-}
-
-@media (min-width: 520px) and (max-width: 770px) {
-  .logo-numero-whatsapp{
-   font-size: 90%;
-   margin-top: -2%;
-
-  }
-}
-
-
-.logo-numero-whatsapp h3{
-    font-family: "Arapey";
-    margin-top: 23%;
-    margin-left: 5px
-
-}
-
-
-.figuraSuperior {
-  width: 110%;
+.imagen-superior{
+  width: 40%;
   height: auto;
-  margin: auto;
-  margin-top: 5%;
-  margin-left: -15%; /* Ajusta el valor según tus necesidades */
 }
 
-.titulo-texto {
-  text-align: center;
-  color: #ff9540; /* Añadí un color de texto para asegurarme de que sea visible en el fondo oscuro */
-  margin-top: 10%;
+
+
+.imagenSuperior{
+  width: 100%;
+}
+
+
+
+.titulo-top {
+  width: 60%;
+  height: auto;
+  margin-left: auto; /* Empuja el elemento hacia la derecha del contenedor */
+  display: flex; /* Para permitir el uso de margin-left: auto */
+  align-items: center; 
   font-family: "RocaOne";
+  color: #FF9540;
 }
 
 
 
+.titulo-top .titulo{
+font-size: 40px;
+}
 
 
 
-.imagenCentroFooter {
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .top{
+      display: block;
+  }
+
+
+  .imagen-superior{
+      width: 100%;
+      height: auto;
+  }
+  
+  .titulo-top {
+      width: 100%;
+      height: auto;
+      display: flex; /* Utilizamos flexbox */
+      justify-content: center; /* Alineamos horizontalmente al centro */
+      align-items: center; /* Alineamos verticalmente al centro */
+  }
+  
+  .titulo-top .titulo {
+      font-size: 100%;
+      text-align: center;
+  }
+  
+    
+  }
+
+
+
+
+.medio{
+  display: flex;
+}
+
+.instagram{
+  display: block;
+  width: 30%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "RocaOne";
+  color: #280B02;
+}
+
+
+.datosInstagram{
+  display: flex;
   width: 100%;
   height: auto;
-  margin: auto;
-  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
 }
 
 
 
-
-@media (max-width: 870px) {
-  .imagenCentroFooter {
-    width: 70%;
-    margin: 0 auto; /* Esto centra horizontalmente el elemento */
-    display: block; /* Asegura que el elemento sea un bloque */
-
-  }
+.logoIg{
+  width: 15%;
 }
 
-
-@media (max-width: 770px) {
-  .imagenCentroFooter  {
-    width: 70%;
-    margin: 0 auto; /* Esto centra horizontalmente el elemento */
-    display: block; /* Asegura que el elemento sea un bloque */
-
-  }
-}
-
-@media (max-width: 600px) {
-  .imagenCentroFooter {
-    width: 60%;
-    margin: 0 auto; /* Esto centra horizontalmente el elemento */
-    display: block; /* Asegura que el elemento sea un bloque */
-
-  }
-}
-
-@media (max-width: 500px) {
-  .imagenCentroFooter {
-    width: 60%;
-    margin: 0 auto; /* Esto centra horizontalmente el elemento */
-    display: block; /* Asegura que el elemento sea un bloque */
-
-  }
-}
-
-@media (max-width: 400px) {
-  .imagenCentroFooter {
-    width: 60%;
-    margin: 0 auto; /* Esto centra horizontalmente el elemento */
-    display: block; /* Asegura que el elemento sea un bloque */
-
-  }
-}
-
-@media (max-width: 300px) {
-  .imagenCentroFooter {
-    width: 60%;
-    margin: 0 auto; /* Esto centra horizontalmente el elemento */
-    display: block; /* Asegura que el elemento sea un bloque */
-  }
+.usuarioIg{
+  font-size: 32px;
 }
 
 
 
 
 
+.imagenCentro {
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Alinea verticalmente el contenido */
+}
+
+.imagenCentral {
+  width: 500px; /* Ancho deseado de la imagen */
+  height: auto;
+}
 
 
-.logo-instagram {
+.whatsapp{
+  display: block;
+  width: 30%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  font-family: "RocaOne";
+  color: #280B02;
+}
+
+.datosWhatsapp{
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+
+.logowp{
   width: 15%;
 }
 
 
-@media (max-width: 1250px) {
-  .logo-instagram {
-    width: 10%;
-    height: auto;
-    margin-left: 1em;
 
-  }
+.usuariowp{
+  font-size: 32px;
 }
 
-
-
-
-@media (max-width: 1100px) {
-  .logo-instagram  {
-    width: 10%;
-    margin-left: 2em;
+@media screen and (min-width: 300px) and (max-width: 799px) {
+  .medio{
+      display: block;
+      justify-content: center;
+      align-items: center;
   }
-}
+  
 
-
-@media (max-width: 1000px) {
-  .logo-instagram  {
-    width: 10%;
-    margin-left: 2em;
-  }
-}
-
-@media (max-width: 900px) {
-  .logo-instagram  {
-    width: 10%;
-    margin-left: 2em;
-  }
-}
-
-@media (max-width: 870px) {
-  .logo-instagram  {
-    width: 10%;
-    margin-left: 2em;
-  }
-}
-
-
-
-
-
-
-
-
-
-@media (max-width: 770px) {
-  .logo-instagram  {
-    width: 10%;
-    margin-left: 13em;
-  }
-}
-
-@media (max-width: 600px) {
-  .logo-instagram  {
-    width: 10%;
-    margin-left: 10em;
+  .instagram{
+      width: 100%;
+      height: auto;
+      margin-top: 50px;
+      font-size: 20px;
 
   }
-}
 
-@media (max-width: 500px) {
-  .logo-instagram  {
-    width: 10%;
-    margin-left: 8em;
-
-  }
-}
-
-@media (max-width: 400px) {
-  .logo-instagram  {
-    width: 10%;
-    margin-left: 6em;
-
-  }
-}
-
-@media (max-width: 300px) {
-  .logo-instagram {
-    width: 10%;
-    margin-left: 2em;
-
-  }
-}
-
-
-
-
-
-.logo-whatsapp {
-    width: 10%;
+  
+  .datosInstagram{
+      display: flex;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
   }
 
-  @media (min-width: 300px) and (max-width: 770px) {
-    .logo-whatsapp {
-     margin-left: 150%;
-     margin-top: -20px;
-     white-space: nowrap; 
+  .usuarioIg{
+      font-size: 20px;
+  }
+
+
+
+  .imagenCentro{
+      width: 100%;
+      height: auto;
+      margin-top: 60px;
+      
+  }
+
+  .imagenCentral {
+      width: 400px; /* Ancho deseado de la imagen */
+      height: auto;
+  }
+
+  .whatsapp{
+          width: 100%;
+          height: auto;   
+          margin-top: 50px;
+
+      }
+
+      .datosWhatsapp{
+          display: flex;
+          width: 100%;
+          height: auto;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+      }
+  
+      .usuariowp{
+          font-size: 20px;
+      }
+  }
+
+
+
+  @media screen and (min-width: 800px) and (max-width: 1300px) {
+   .top{
+    display: flex;
+   }
+   
+    .titulo-top .titulo {
+      font-size:190%;
+      text-align: center;
+      justify-content: center;
+  
     }
+  
+    .imagen-superior{
+      width: 50%;
+      height: auto;
+    }
+    
+  
+
+    .datosInstagram{
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+    .usuarioIg{
+      font-size: 20px;
+    }
+
+
+    .datosWhatsapp{
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+    .usuariowp{
+      font-size: 20px;
+    }
+
+    .medio{
+      margin-top: 5%;
+  }
+  
   }
 
-
-
+  .imagenCentral {
+      width: 400px; /* Ancho deseado de la imagen */
+      height: auto;
+  }
 
   
   
-  .fa-brands.fa-whatsapp {
-    font-size: 30px; /* Ajusta el valor según tus necesidades */
-    margin-top: 20px;
-}
+
+  
+
 
 
 
 @font-face {
-  font-family: "Arapey";
-  src: url("../fonts/Arapey-Italic.ttf") format("truetype");
+  font-family: "RocaOne";
+  src: url("../fonts/Roca\ Italic.ttf") format("truetype"); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "RocaOne";
-  src: url("../fonts/Roca\ Italic.ttf") format("truetype");
+  font-family: "Arapey";
+  src: url("../fonts/Arapey-Italic.ttf") format("truetype"); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
   font-weight: normal;
   font-style: normal;
 }
