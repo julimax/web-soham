@@ -10,9 +10,32 @@
 <body>
 
     
-    <div class="divIndex">
-        <iframe class="navBar" src="../layouts/navBar.html" frameborder="0"></iframe>
-    </div>
+    <nav class="nav">
+        <div class="logo">
+            <img src="../images/logoSoham.png" alt="soham">
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="sohamDetalles.html">Soham</a></li>
+            <li><a href="clasesVirtuales.html">Clases virtuales</a></li>
+            <li><a href="quienesSomos.html">Nosotros</a></li>
+            <li><a href="galeriaDeFotos.html">Galeria de fotos</a></li>
+        </ul>
+        <!-- Botón del menú para dispositivos móviles -->
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        <!-- Menú desplegable para dispositivos móviles -->
+        <div id="mobile-menu" class="overlay">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="../index.html">Home</a>
+<!---->         <a href="../bloques/sohamDetalles.html">Soham</a>
+<!---->         <a href="../bloques/clasesVirtuales.html">Clases virtuales</a>
+                <a href="../bloques/quienesSomos.html">Nosotros</a>
+<!---->         <a href="../bloques/galeriaDeFotos.html">Galeria de fotos</a>
+            </div>
+        </div>
+    </nav>
+
   
 
 
@@ -60,8 +83,6 @@
 
 
     </div>
-
+<script src="/web-soham/javascript/nav.js"></script>
 </body>
 </html>
-
-

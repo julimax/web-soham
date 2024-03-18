@@ -14,154 +14,477 @@ body {
 }
 
 
-
-.navBar {
-  width: 100%;
-  height: 35px;
+.nav{
+  background-color: #9b70457d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 45px;
+  
+  width: 100%; 
+  }
+  
+  .main {
+  position: relative; /* Cambiamos a posición relativa */
+  }
+  
+  .nav .logo{
+  cursor: pointer;
+  margin-right: auto;
+  }
+  
+  .nav .logo img{
+  height: 30px;
+  width: auto;
+  }
+  
+  
+  
+  .nav .nav-links{
+  list-style: none;
+  font-family: "RocaOne";
+  
+  }
+  
+  
+  
+  .nav .nav-links li{
+  display: inline-block;
+  padding: 0 20px;    
+  }
+  
+  
+  
+  .nav .nav-links a {
+  font-size: 16;
+  color: #eceff1; /* Color inicial del texto */
+  text-decoration: none; /* Quitamos subrayado de los enlaces */
+  transition: all 0.5s;
+  }
+  
+  .nav .nav-links a:hover {
+  color: #000; /* Color del texto al pasar el mouse (negro en este caso) */
+  
+  }
+  
+  
+  
+  /**/.menu {
+  display:none;
+  }
+  
+  .nav .btn button,
+  /**/.nav .menu button{
+  margin-left: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 9px 25px;
+  background: #000000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  }
+  
+  
+  
+  /**/@media screen and (max-width: 800px){
+  .nav-links, .btn {
+      display: none;
+  }
+  .menu {
+      display: inherit;
+  }
+  }
+  
+  
+  
+  /*Nav Mobile*/
+  
+  .nav a{
+  text-decoration: none;  
+  /*borramos el que teniamos en .header .nav-links a*/ 
+  }
+  
+  .nav .overlay {
+  height: 100%;
+  width: 0;
   position: fixed;
-  top: 0;
+  z-index: 1;
   left: 0;
-  z-index: 1000;
-}
-.titulo-ClasesVirtuales {
-  margin-top: 10px; /* Ajusta el margen superior según lo deseado */
-  text-align: center;
+  top: 0;
+  background-color: #fad4afe1;
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+  font-family: "RocaOne";
+  }
+  
+  .nav .overlay .overlay-content{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;    
+  }
+  
+  .nav .overlay a{
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  color: #000000;
+  }
+  
+  .nav .overlay a:hover, 
+  .nav .overlay a:focus{
+  color: #a97c0a;
+  }
+  
+  .nav .overlay .close{
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+  }
+  
+  @media screen and (max-height:450px) {
+  .nav .overlay a{
+      font-size: 20px;
+  }
+  .nav .overlay .close{
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+  }
+  }
+
+
+
+
+.contenidoPrincipal{
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.titulo {
-  /* Estilos adicionales para el título si es necesario */
-  color: #280B02;
+.titulo{
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+
+.titulo .titulo-superior{
+  font-size: 40px;
   font-family: 'RocaOne';
-  text-transform: uppercase;
-  font-size: 50px;
 
 }
 
-
-.div-imagenes1{
+.Principiantes-Avanzados{
   display: flex;
   width: 100%;
+  height: auto;
+}
+
+.Principiantes{
+  display:flex;
+  width: 50%;
+  height: auto;
   justify-content: center;
+}
+.Principiantes img {
+  width: 50%; 
+  transition: transform 0.3s ease;
+}
 
+.Principiantes img:hover {
+  transform: scale(1.1);
 }
 
 
-.imagen1 {
-  width: 400px; /* Ajusta el ancho solo de la imagen1 */
-  height: auto; /* Ajusta la altura automáticamente */
-  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); /* Agrega una transición más lenta y armoniosa */
-}
-
-.imagen1:hover {
-  transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse sobre ella */
-}
-
-
-.imagen2 {
-  width: 300px; /* Ancho normal de la imagen2 */
-  height: auto; /* Ajusta la altura automáticamente */
-  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); /* Agrega una transición más lenta y armoniosa */
-}
-
-
-.imagen2:hover {
-  transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse sobre ella */
-}
-
-.div-imagenes1 {
-  display: flex;
+.Avanzados{
+  display:flex;
+  width: 50%;
+  height: auto;
   justify-content: center;
-  margin-top: 20px; /* Ajusta el margen superior entre las imágenes */
-  margin-bottom: 20px; /* Ajusta el margen inferior entre las imágenes */
 }
 
-.imagen1, .imagen2 {
-  margin: 0 200px; /* Ajusta el margen horizontal entre las imágenes */
+.Avanzados img{
+  width: 40%;
+  transition: transform 0.3s ease;
+
+}
+.Avanzados img:hover {
+  transform: scale(1.1); 
 }
 
 
 
-.div-imagenes2{
+
+.ImagenesCentrales {
   display: flex;
+  flex-direction: row; /* Para apilar los elementos verticalmente */
+  justify-content: space-between; /* Distribuye uniformemente el espacio verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
   width: 100%;
+  height: 500px; /* Puedes ajustar este valor según sea necesario */
+}
+
+
+
+
+.click{
+  display:flex;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+}
+.click img{
+ max-width:450px;
+  height: auto;
+  transition: .5s;
+
+}
+
+.click img:hover{
+  transform: scale(1.1);
+
+}
+
+.imagenFormacion{
+  display:flex;
+  width: 50%;
+  height: auto;
   justify-content: center;
 }
 
-.clickhere{
-  width: 80%;
-  margin-top: 10%;
-  margin-left: 10%;
-  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); /* Agrega una transición más lenta y armoniosa */
+.imagenFormacion img{
+  width: 50%;
+  margin-top: 20%;
+  transition: .5s;
+
 }
 
 
-.clickhere:hover {
-  transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse sobre ella */
-}
+.imagenFormacion img:hover{
+  transform: scale(1.1);
 
-.imagen3{
-  width: 80%;
-  margin-top: 40%;
-  margin-left: 10%;
-
-  transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1); /* Agrega una transición más lenta y armoniosa */
 }
 
 
-.imagen3:hover {
-  transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse sobre ella */
-}
-
-
-
-.div-imagenes3{
+.imagenesInferiores{
   display: flex;
+  flex-direction: row; /* Para apilar los elementos verticalmente */
+  justify-content: space-between; /* Distribuye uniformemente el espacio verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
   width: 100%;
+  height: 500px;
+}
+
+
+
+.estudios{
+  display:flex;
+  width: 50%;
+  height: auto;
   justify-content: center;
+}
+.estudios img{
+ max-width:50%;
+  height: auto;
+  transition: .5s;
+}
+
+.estudios img:hover{
+  transform: scale(1.1);
+
+}
+
+
+.pasos{
+  display:flex;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+}
+
+.pasos img{
+  width: 60%;
+  margin-top: 15%;
+  transition: .5s;
+}
+
+.pasos img:hover{
+  transform: scale(1.1);
+
+}
+
+
+
+.decoracion {
+  display: flex;
+  width: 50%;
+  height: auto;
+}
+
+.decoracion img {
+  width: 100%; /* Establece el ancho de la imagen al 100% del ancho del contenedor */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
  
-}
-.body::-webkit-scrollbar{
-  width: 10px;
+
+  .Principiantes-Avanzados{
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  
+  .Principiantes{
+    display:flex;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+  }
+  .Principiantes img {
+    width: 70%; 
+    transition: transform 0.3s ease;
+  }
+  
+  .Principiantes img:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  .Avanzados{
+    display:flex;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+  }
+  
+  .Avanzados img{
+    width: 60%;
+    transition: transform 0.3s ease;
+  
+  }
+  .Avanzados img:hover {
+    transform: scale(1.1); 
+  }
+  
+
+
+
+
+  
+.ImagenesCentrales{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
 }
 
-.body::-webkit-scrollbar-thumb{
-  background: #373431;
-  border-radius: 5px;
 
+
+.click{
+  display:flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
 }
 
-.imagen4 {
+
+.click img{
+  width: 80%;
+  height: auto;
+}
+
+.imagenFormacion{
+  display:flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin-top: 10%;
+}
+.imagenFormacion img{
+  display:flex;
   width: 60%;
   height: auto;
-  margin-top: -250px;
-  margin-left: 180px; /* Desplazar hacia la izquierda */
-  transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1); /* Agrega una transición más lenta y armoniosa */
-}
-
-
-.imagen4:hover {
-  transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse sobre ella */
-}
-
-.imagen5{
-  width: 70%;
-  margin-top: 25%;
-  margin-left: 20%;
-  transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1); /* Agrega una transición más lenta y armoniosa */
-}
-
-
-.imagen5:hover {
-  transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse sobre ella */
 }
 
 
 
-.decoracion{
-  width:70%;
-  margin-top: -15%;
-  margin-left: -14%;
+
+
+.imagenesInferiores{
+  display: flex;
+  width: 100%;
 }
+
+
+
+.estudios{
+  display:flex;
+  width: 50%;
+  height: auto;
+}
+.estudios img{
+ max-width:80%;
+  height: auto;
+  transition: .5s;
+}
+
+.estudios img:hover{
+  transform: scale(1.1);
+
+}
+
+
+.pasos{
+  display:flex;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+}
+
+.pasos img{
+  width: 100%;
+  transition: .5s;
+  margin-bottom: 25%;
+}
+
+.pasos img:hover{
+  transform: scale(1.1);
+
+}
+
+
+.decoracion {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10%;
+}
+
+.decoracion img {
+  width: 100%; /* Establece el ancho de la imagen al 100% del ancho del contenedor */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+
+
+  }
+
+
+
 
 
 
