@@ -1,180 +1,297 @@
-body {
+*{
     margin: 0;
-    overflow: hidden; /* Evita la barra de desplazamiento */
-}
- 
-div{
-    margin: 0;
-}
-
-.navBar{
-    position: fixed;
-    width: 100%;
-    height: 35px;
-}
-
-
-.mainBloque4 {
-    width: 100%;
-    background-color: #ebbb8d;
-    display: flex;
-    height: 670px;
-
-}
-
-.subMainBloque4 {
-    display: block;
-}
-
-.ClasePresencial-content {
-    display: flex; /* Usa el modelo de caja flexible */
-    align-items: center; /* Centra los elementos verticalmente */
-    height: auto;
-    width: 100%;
-    font-size: 200%;
-    color: #2F1714;
-    justify-content: space-between;
-    @media (max-width: 1000px) {
-        font-size: 160%;
-      }
-    
-      @media (max-width: 770px) {
-        font-size: 120%;
-      }
-    
-      @media (max-width: 600px) {
-        font-size: 100%;
-      }
-}
-
-.clase-presencial {
-    display: flex; /* Usa el modelo de caja flexible */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
-    text-align: center; 
-    justify-content: space-between;
-}
-
-
-
-.imagenDelCentro {
-    width: 150%; /* Cambia el tamaño de la imagen al 100% del contenedor */
-    height: auto;
-    animation: aparecer 1.5s ease-out;
-}
-
-.img-ig {
-    width: 40%;
-    height: auto;
-    display: block;
-    margin: -120px auto 0; /* Ajusta el margen para subir la imagen */
-    animation: aparecerImagenIg 2s forwards;
-    @media (max-width: 2000px) {
-        width: 30%;
-      }
-    
-      @media (max-width: 770px) {
-        font-size: 120%;
-      }
-    
-      @media (max-width: 600px) {
-        font-size: 100%;
-      }
-}
-
-
-
-.bloque4Item {
-    display: flex;
-    width: 33%;
-    margin: 0;
-    align-items: center; /* Centra los elementos verticalmente */
-    text-align: center; 
-    justify-content: center;
-    font-family: 'RocaOne';
     padding: 0;
-    font-size: 100%;
-    justify-content: space-around;
+    background-color: #EBBB8D;
 }
 
 
 
+.nav{
+    background-color: #EBBB8D;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 45px;
+    
+    width: 100%; 
+    }
+    
+    .main {
+    position: relative; /* Cambiamos a posición relativa */
+    }
+    
+    .nav .logo{
+    cursor: pointer;
+    margin-right: auto;
+    }
+    
+    .nav .logo img{
+    height: 30px;
+    width: auto;
+    }
+    
+    
+    
+    .nav .nav-links{
+    list-style: none;
+    font-family: "RocaOne";
+    
+    }
+    
+    
+    
+    .nav .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+    }
+    
+    
+    
+    .nav .nav-links a {
+    font-size: 16;
+    color: #eceff1; /* Color inicial del texto */
+    text-decoration: none; /* Quitamos subrayado de los enlaces */
+    transition: all 0.5s;
+    }
+    
+    .nav .nav-links a:hover {
+    color: #000; /* Color del texto al pasar el mouse (negro en este caso) */
+    
+    }
+    
+    
+    
+    /**/.menu {
+    display:none;
+    }
+    
+    .nav .btn button,
+    /**/.nav .menu button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 9px 25px;
+    background: #000000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    }
+    
+    
+    
+    /**/@media screen and (max-width: 800px){
+    .nav-links, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+    }
+    
+    
+    
+    /*Nav Mobile*/
+    
+    .nav a{
+    text-decoration: none;  
+    /*borramos el que teniamos en .header .nav-links a*/ 
+    }
+    
+    .nav .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #fad4afe1;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+    font-family: "RocaOne";
+    }
+    
+    .nav .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    }
+    
+    .nav .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #000000;
+    }
+    
+    .nav .overlay a:hover, 
+    .nav .overlay a:focus{
+    color: #a97c0a;
+    }
+    
+    .nav .overlay .close{
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+    }
+    
+    @media screen and (max-height:450px) {
+    .nav .overlay a{
+        font-size: 20px;
+    }
+    .nav .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    }
 
-.itemImagen {
-    max-width: 100%;
+
+.main{
+    display: flex;
+    width: 100%;
     height: auto;
-    animation: aparecer 1.5s ease-out;
-    margin: 0;
 }
 
-.itemTitulo {
-    animation: aparecerSubitulo 2s forwards;
-    font-size: 'RocaOne';
-    font-size: 150%;
-    animation: aparecerImagenIg 2s forwards;
+.contenido{
+    display: flex;
 }
 
-.itemTitulo2 {
-    margin-top: 30%;
-    animation: aparecerSubitulo 2s forwards;
-    font-size: 'RocaOne';
-    font-size: 110%;
-    animation: aparecerImagenIg 2s forwards;
-}
-
-.itemSubtitulo {
-    animation: aparecerSubtitulo 2s forwards;
-    font-family: 'Arapey';
-    font-size: 140%;
-}
-
-@keyframes aparecerSubtitulo {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0.2; /* Ajusta el nivel de transparencia inicial aquí (0 es completamente transparente, 1 es opaco) */
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.titulo {
+    width: 30%;
+    height: 650px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    text-align: center; /* Añadido para casos en los que el contenido no sea texto */
 }
 
 
 
-@keyframes aparecerImagenIg {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0.2; /* Ajusta el nivel de transparencia inicial aquí (0 es completamente transparente, 1 es opaco) */
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+.titulo h2{
+  text-align: center;
+  font-size: 60px;
+  font-family: "Arapey";
+
 }
 
-@keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+
+.imagen {
+    width: 40%;
+    height: 650px;
+    display: flex;
+    flex-direction: column; /* Establece la dirección de flexión como columna */
+    justify-content: flex-end; /* Alinea el contenido al principio del eje principal (arriba) */
+    align-items: center; /* Centra horizontalmente el contenido */
 }
 
+.imagen .imagenB4 {
+    width: 100%;
+    height: auto;
+}
+
+.imagen .Interactive {
+    width: 80%;
+    height: auto;
+}
+
+
+.imagen .Interactive {
+    display: block; /* Para asegurarse de que la imagen ocupe todo el ancho disponible */
+    margin: 0 auto; /* Alinea la imagen horizontalmente en el centro */
+    width: 80%; /* Ancho del 80% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+
+
+
+
+
+
+.texto {
+    width: 30%;
+    height: 650px;
+    display: flex;
+    flex-direction: column; /* Establece la dirección de flexión como columna */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Añadido para casos en los que el contenido no sea texto */
+}
+
+.texto h2 {
+    font-size: 40px;
+    font-family: "Arapey";
+}
+
+.texto h3 {
+    margin-top:15%;
+    font-size: 45px;
+    font-family: "Arapey";
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+ .contenido{
+    display: block;
+ }
+
+ .titulo{
+    width: 100%;
+    height: auto;
+ }
+
+ .titulo h2{
+    font-size: 40px;
+ }
+
+ .imagen{
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+ }
+ 
+
+ .imagen .imagenB4{
+    width: 120%;
+ }
+
+ .texto{
+    width: 100%;
+    height: auto;
+ }
+
+ .texto h2{
+    font-size: 35px;
+ }
+
+ .texto h3{
+    font-size: 30px;
+    margin-bottom: 10%;
+ }
+}
 
 @font-face {
     font-family: 'RocaOne';
-    src: url('../fonts/Roca\ Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Arapey';
-    src: url('../fonts/Arapey-Italic.ttf') format('truetype'); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+    src: url('../fonts/Roca\ Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   
+
+  @font-face {
+    font-family: "Arapey";
+    src: url("../fonts/Arapey-Italic.ttf") format("truetype"); /* Ajusta la ruta y el formato según los archivos que hayas descargado */
+    font-weight: normal;
+    font-style: normal;
+  }

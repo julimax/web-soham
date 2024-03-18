@@ -1,65 +1,64 @@
-<link rel="stylesheet" href="../styles/clasesPresenciales.css" />
-
-
-
-<div class="divIndex">
-  <iframe class="navBar" src="../layouts/navBar.html" frameborder="0"></iframe>
-</div>
-
-
-<div class="mainBloque4">
-
-    <div class="subMainBloque4">
-
-        <div class="ClasePresencial-content">
-    
-            <div class="bloque4Item">
-    
-                <div class="clasePresencial">
-                    <div class="itemTitulo">
-                      <p>CLASES <br>
-                        PRESENCIALES</p>
-                      </div>
-                </div>
-    
-    
-    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/clasesPresenciales.css" />
+  </head>
+  <body>
+    <nav class="nav">
+        <div class="logo">
+            <img src="../images/logoSoham.png" alt="soham">
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../bloques/sohamDetalles.html">Soham</a></li>
+            <li><a href="../bloques/clasesVirtuales.html">Clases virtuales</a></li>
+            <li><a href="../bloques/quienesSomos.html">Nosotros</a></li>
+            <li><a href="../bloques/galeriaDeFotos.html">Galeria de fotos</a></li>
+        </ul>
+        <!-- Botón del menú para dispositivos móviles -->
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        <!-- Menú desplegable para dispositivos móviles -->
+        <div id="mobile-menu" class="overlay">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+              <a href="../index.html">Home</a>
+              <!---->         <a href="../bloques/sohamDetalles.html">Soham</a>
+              <!---->         <a href="../bloques/clasesVirtuales.html">Clases virtuales</a>
+                              <a href="../bloques/quienesSomos.html">Nosotros</a>
+              <!---->         <a href="../bloques/galeriaDeFotos.html">Galeria de fotos</a>
             </div>
-    
-            <div class="bloque4Item">
-              <img class="imagenDelCentro" src="../images/bloque 4.png" alt="imagendelcentro" />
-            </div>
-    
-            <div class="bloque4Item">
-    
-
-              <div class="tesxtoDescripcion">
-                <p class="itemTitulo2">INGRESA A <br>
-                  NUESTRO LINK DE <br>
-                   INSTAGRAM</p>
-                <p class="itemSubtitulo">
-                  Enterate desde <br> 
-                  instagram nuestros <br>
-                  horarios y todas sus <br>
-                  actualizacines en<br>
-                  el momento!
-                </p>
-              </div>
-
-              
-            </div>
-    
+        </div>
+    </nav>
+    <main>
+      <div class="contenido">
+      
+        <div class="titulo">
+             <h2>Clases <br> Presenciales</h2>
         </div>
 
-        
-        <div class="img-instagram">
-          <a href="https://instagram.com/yoga.soham.escuela?igshid=NmQ5Y2ExZGE1MQ==" target="_blank">
-              <img class="img-ig" src="../images/Interactive.png" alt="imagenInstagram" />
-          </a>
+        <div class="imagen">
+             <img class="imagenB4" src="../images/bloque 4.png" alt="">
+             <a href="https://www.instagram.com/yoga.soham.escuela/?igshid=NmQ5Y2ExZGE1MQ%3D%3D"><img class="Interactive" src="../images/Interactive.png" alt=""></a>
+        </div>
+
+        <div class="texto">
+             <h2>INGRESA A <br>
+                NUESTRO LINK DE <br>
+                INSTAGRAM</h2>
+
+                <h3>Enterate desde <br>
+                    instagram nuestros <br>
+                    horarios y todas sus <br>
+                    actualizacines en <br>
+                    el momento!</h3>
+        </div>
+
+
       </div>
-    
-    
-    </div>
-
-</div>
-
+    </main>
+    <script src="../javascript/nav.js"></script>
+  </body>
+</html>

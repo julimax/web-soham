@@ -6,14 +6,154 @@ body {
 }
 
 
-.navBar {
-    width: 100%;
-    height: 35px;
+
+
+.nav{
+    background-color: #9b70457d;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 45px;
+    
+    width: 100%; 
+    }
+    
+    .main {
+    position: relative; /* Cambiamos a posición relativa */
+    }
+    
+    .nav .logo{
+    cursor: pointer;
+    margin-right: auto;
+    }
+    
+    .nav .logo img{
+    height: 30px;
+    width: auto;
+    }
+    
+    
+    
+    .nav .nav-links{
+    list-style: none;
+    font-family: "RocaOne";
+    
+    }
+    
+    
+    
+    .nav .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+    }
+    
+    
+    
+    .nav .nav-links a {
+    font-size: 16;
+    color: #eceff1; /* Color inicial del texto */
+    text-decoration: none; /* Quitamos subrayado de los enlaces */
+    transition: all 0.5s;
+    }
+    
+    .nav .nav-links a:hover {
+    color: #000; /* Color del texto al pasar el mouse (negro en este caso) */
+    
+    }
+    
+    
+    
+    /**/.menu {
+    display:none;
+    }
+    
+    .nav .btn button,
+    /**/.nav .menu button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 9px 25px;
+    background: #000000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    }
+    
+    
+    
+    /**/@media screen and (max-width: 800px){
+    .nav-links, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+    }
+    
+    
+    
+    /*Nav Mobile*/
+    
+    .nav a{
+    text-decoration: none;  
+    /*borramos el que teniamos en .header .nav-links a*/ 
+    }
+    
+    .nav .overlay {
+    height: 100%;
+    width: 0;
     position: fixed;
-    top: 0;
+    z-index: 1;
     left: 0;
-    z-index: 1000;
-  }
+    top: 0;
+    background-color: #fad4afe1;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+    font-family: "RocaOne";
+    }
+    
+    .nav .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    }
+    
+    .nav .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #000000;
+    }
+    
+    .nav .overlay a:hover, 
+    .nav .overlay a:focus{
+    color: #a97c0a;
+    }
+    
+    .nav .overlay .close{
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+    }
+    
+    @media screen and (max-height:450px) {
+    .nav .overlay a{
+        font-size: 20px;
+    }
+    .nav .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    }
+  
+  
+  
 
 
 

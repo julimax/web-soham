@@ -1,60 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>galeriaDeFotos</title>
+    <link rel="stylesheet" href="../styles/galeriaDeFotos.css" />
+  </head>
+  <body>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Soham-Galeria</title>
-    <link rel="stylesheet" href="../styles/galeriaDeFotos.css">
-    <link rel="icon" href="../images/logoSoham.png" type="image/x-icon" />
-</head>
-
-<body class="body">
-
-    <div class="div1">
-        <div class="divIndex">
-            <iframe class="navBar" src="../layouts/navBar.html" frameborder="0"></iframe>
+    <nav class="nav">
+        <div class="logo">
+            <img src="../images/logoSoham.png" alt="soham">
         </div>
-     
-     
-        <video class="videoGaleria" controls>
-            <source src="../videos/videogaleriadefotos.mp4" type="video/mp4">
-        </video>
-        <img class="imagen1" src="../images/imagen1Galeria.png" alt="">
-        <img class="imagen2" src="../images/imagen2Galeria.png" alt="">
-    </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="sohamDetalles.html">Soham</a></li>
+            <li><a href="clasesVirtuales.html">Clases virtuales</a></li>
+            <li><a href="quienesSomos.html">Nosotros</a></li>
+            <li><a href="galeriaDeFotos.html">Galeria de fotos</a></li>
+        </ul>
+        <!-- Botón del menú para dispositivos móviles -->
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        <!-- Menú desplegable para dispositivos móviles -->
+        <div id="mobile-menu" class="overlay">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="../index.html">Home</a>
+<!---->         <a href="../bloques/sohamDetalles.html">Soham</a>
+<!---->         <a href="../bloques/clasesVirtuales.html">Clases virtuales</a>
+                <a href="../bloques/quienesSomos.html">Nosotros</a>
+<!---->         <a href="../bloques/galeriaDeFotos.html">Galeria de fotos</a>
+            </div>
+        </div>
+    </nav>
+    <main class="contenedorPrincipal">
+      <div class="parteSuperior">
+        <div class="video">
+          <video controls>
+            <source  src="../videos/videogaleriadefotos.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
 
-    <div class="div2">
-
-       <img class="imagen1Galeria2" src="../images/imagen1Galeria2.png" alt="">
-    
-       
-       <a href="https://instagram.com/yoga.soham.escuela?igshid=NmQ5Y2ExZGE1MQ==" target="_top" style="text-decoration: none; color: inherit;">
-    
-        <img class="ig" src="../images/PNGINSTAGRAM.png" alt="">
-       <h2 class="infoIg" >@yoga.soham.escuela</h2>
-
-    </a>
+        <div class="parteSuperiorB">
+            <div class="superiorA">
+                 <img src="../images/imagen1Galeria.png" alt="">
+            </div>
+            <div class="superiorB">
+                <img src="../images/imagen2Galeria.png" alt="">
+           </div>
+        </div>
+      </div>
 
 
-       
-       <img class="imagen3Galeria2" src="../images/imagen3Galeria2.png" alt="">
-   
-       <img class="imagen2GaleriaN2" src="../images/imagen2DeGaleria2.png" alt="">
+      <div class="parteCentral">
+           <div class="centroA">
+            <img src="../images/imagen1Galeria2.png" alt="">
+           </div>
 
-    </div>
-
-
-
-    <div class="div3">
-      <img class="imagen1Galeria3" src="../images/imagen1Galeria3.png" alt="">
+           <div class="centroB">
+                <div class="usuarioIG">
+                    <img src="../images/PNGINSTAGRAM.png" alt="">
+                    <a href="https://www.instagram.com/yoga.soham.escuela/?igshid=NmQ5Y2ExZGE1MQ%3D%3D">
+                        <h3>@yoga.soham.escuela</h3>
+                    </a>
+                </div>
+                <div class="imagenCentroB">
+                    <img src="../images/imagen3Galeria2.png" alt="">
+                </div>
+           </div>
+          
+           
+           <div class="centroC">
+            <img src="../images/imagen2DeGaleria2.png" alt="">
+          </div>
       
+      
+        </div>
 
-      <img class="imagen2Galeria3" src="../images/imagen2Galeria3.png" alt="">
+        <div class="parteInferior">
+            <div class="parteInferiorA">
+                <img src="../images/imagen1Galeria3.png" alt="">
+            </div>
+         
 
-      <img class="imagen3Galeria3" src="../images/imagen3Galeria3.png" alt="">
+            <div class="parteInferiorB">
+                <img src="../images/imagen2Galeria3.png" alt="">
+            </div>
 
-    </div>
-
-</body>
-
+            <div class="parteInferiorC">
+                <img src="../images/imagen3Galeria3.png" alt="">
+            </div>
+        </div>
+    </main>
+    <script src="/web-soham/javascript/nav.js"></script>
+  </body>
 </html>
